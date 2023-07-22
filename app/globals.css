@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background-color: #f2f2ef5e;
+}
+
+/* FOOTER */
+
+.vertical_line {
+  border-left: 1px solid #ffffff;
+  height: 100px;
+  width: 1px;
+}
+
+
+.horizontalLineFooter{
+  height: 1px;
+  width: 300px;
+  border:1px solid #ffffff;
+}
