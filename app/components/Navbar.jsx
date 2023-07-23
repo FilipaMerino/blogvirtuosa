@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-[#333333]">
+      <nav className="bg-[#333333] w-full ">
         <div className="navbar lg:flex lg:justify-between">
           <div className="navbar-start">
             <div className="dropdown">
@@ -53,7 +53,7 @@ const Navbar = () => {
 
             <Link
               className="btn btn-ghost normal-case lg:text-lg text-md text-white"
-              href="./new-post">
+              href="./">
               ADMIN VIRTUOSA
             </Link>
           </div>

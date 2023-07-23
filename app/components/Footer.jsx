@@ -19,7 +19,7 @@ library.add(faInstagram, faLinkedin, faFacebookSquare);
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-[#fb653e] text-neutral-content md:flex md:justify-around md:items-center ">
+    <footer className="footer p-10 bg-[#fb653e] text-neutral-content md:flex md:justify-around md:items-center">
       <div className=" w-full md:w-[13rem] flex justify-center items-center">
         <div className="flex justify-center md:justify-start">
           <Image src={logo} alt="Logo" className="w-[10rem] md:w-[30rem]" />
