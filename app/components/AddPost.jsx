@@ -41,6 +41,7 @@ const AddPost = ({ refreshPosts }) => {
             title: newPostTitle,
             content: newPostContent,
             img: newPostImage,
+            createdAt: new Date(),
           }),
         });
 
@@ -65,7 +66,7 @@ const AddPost = ({ refreshPosts }) => {
     <div>
       {/* You can open the modal using ID.showModal() method */}
       <button className="btn mb-5" onClick={() => setModalOpen(true)}>
-        open modal
+        Add New Post
       </button>
       <dialog
         id="my_modal_3"

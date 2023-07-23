@@ -16,10 +16,11 @@ const Posts = () => {
     const res = await fetch("/api/posts");
     const posts = await res.json();
     const sortedPosts = posts.sort(
-      (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
-    );
+      (a, b) => new Date(a.createdAt) - new Date(b.createdAt)
+    ).reverse();
 
-    setPosts(sortedPosts);
+    setPosts([...sortedPosts]);
+
   };
 
   useEffect(() => {
@@ -37,7 +38,7 @@ const Posts = () => {
 
 
 
-  
+
 
   return (
     <div className="flex flex-col items-center p-10">
@@ -66,9 +67,7 @@ const Posts = () => {
               </button>
 
 
-              <button onClick={() => patchPost(post.id)}>
-                sdfgh
-              </button>
+
             </div>
           </div>
         </div>
