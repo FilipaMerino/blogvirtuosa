@@ -11,8 +11,18 @@ body {
 
 
 
+/* SERVICES
 
-
+*/
+.horizontalLineCard{
+  width: 100px;
+  height:2px;
+  border: 2px solid #fb653e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  background-color: #fb653e;
+}
 
 
 /* FOOTER */

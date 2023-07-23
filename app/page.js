@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Banner from "./components/Banner";
+import ServiceCard from "./components/ServiceCard";
 
 import Posts from "./components/Posts";
 
@@ -8,20 +9,14 @@ const HomePage = () => {
     <div>
       <Banner />
 
+      {/* THIS IS THE ABOUT SESSION FROM THE HOME PAGE */}
       <div className="bg-[#f2f2ef5e] mb-5 md:h-[26rem] md:p-10">
-
-
-
         <div className=" mx-5 mt-10 p-5 md:flex md:mt-[1rem] ">
           <h1 className="text-3xl  md:text-5xl">We help businesses grow.</h1>
           <h1 className="text-3xl  md:text-5xl md:ml-3 text-[#fb653e]">
             Together
           </h1>
         </div>
-
-
-
-
 
         <div className="mx-5 px-5 md:mt-5 ">
           <p className="text-md md:text-lg md:mr-[12rem] text-justify">
@@ -42,6 +37,54 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
+
+      {/* THIS IS THE SERVICE SESSION FROM THE HOME PAGE */}
+
+      <div className="md:p-10">
+        <div className="flex justify-center mb-10">
+          <hr className="horizontalLineCard"></hr>
+        </div>
+
+        <div className="  mx-5 my-10">
+          <div className="mb-16 md:flex justify-center">
+            <h1 className="text-3xl text-center  md:text-5xl">
+              High Quality Services
+            </h1>
+            <h1 className="text-3xl text-center  md:text-5xl">
+              For Your Business
+            </h1>
+          </div>
+
+          <div className=" flex flex-col items-center md:flex lg:flex-row lg:justify-between">
+            <ServiceCard
+              href="./services/businessmanagement"
+              title="Business Management"
+              content="The process of organizing, planning, analyzing and implementing solutions for businesses to help achieve their goals."
+            />
+
+            <ServiceCard
+              href="./services/virtualassistant"
+              title="Virtual Assistant"
+              content="A remote assistant to help with administrative, technical and creative services for businesses, entrepreneurs or individuals."
+            />
+            <ServiceCard
+              href="./services/webdevelopment"
+              title="Web Development"
+              content="The process of designing a unique and personalized website to help
+  promote brand awareness, sell products, services or other
+  opportunities."
+            />
+          </div>
+        </div>
+      </div>
+
+
+      {/* THIS IS THE MENTAL HEALTH SESSION FROM THE HOME PAGE */}
+
+
+
+
+
     </div>
   );
 };
