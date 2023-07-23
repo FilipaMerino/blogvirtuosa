@@ -7,13 +7,7 @@ export const DELETE = async (request, {params}) => {
   const id = params.id;
 
 
-  const index = posts.findIndex((post) => post.id === id)
-
-
-  if(index !== -1){
-    posts.slice(index, 1);
-  }
-
+  await prisma.post.delete({where: {id:id}})
 
 
 
