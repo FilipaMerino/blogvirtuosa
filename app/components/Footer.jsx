@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
 import logo from "./images/logo.png";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import {
+  faInstagram,
+  faLinkedin,
+  faFacebookSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { faInstagram, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-
-import '@fortawesome/fontawesome-svg-core/styles.css';
-
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 library.add(faInstagram, faLinkedin, faFacebookSquare);
-
 
 const Footer = () => {
   return (
@@ -37,62 +37,49 @@ const Footer = () => {
           Stay current with updates from our social channels
         </p>
 
-
-
         <div className="flex w-[5rem] justify-between">
-                <a href="https://www.instagram.com/adminvirtuosa/">
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="text-2xl text-[#ffffff] hover:text-[#333333]"
-                  />
-                </a>
-                <a href="https://www.facebook.com/Adminvirtuosa">
-                  <FontAwesomeIcon
-                    icon={faFacebookSquare}
-                    className="text-2xl text-[#ffffff] hover:text-[#333333]"
-                  />
-                </a>
-                <a href="https://www.linkedin.com/in/adminvirtuosa/">
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    className="text-2xl text-[#ffffff] hover:text-[#333333]"
-                  />
-                </a>
-              </div>
-
-
-
-
-
+          <a href="https://www.instagram.com/adminvirtuosa/">
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="text-2xl text-[#ffffff] hover:text-[#333333]"
+            />
+          </a>
+          <a href="https://www.facebook.com/Adminvirtuosa">
+            <FontAwesomeIcon
+              icon={faFacebookSquare}
+              className="text-2xl text-[#ffffff] hover:text-[#333333]"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/adminvirtuosa/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="text-2xl text-[#ffffff] hover:text-[#333333]"
+            />
+          </a>
+        </div>
       </div>
       <div className=" my-auto vertical_line ml-20 hidden md:block"></div>
 
       <div className="horizontalLineFooter md:hidden"></div>
 
+      <div className="flex mr-20">
+        <Link
+          href="./about"
+          className="text-sm text-[#ffffff]  hover:underline">
+          Our Story
+        </Link>
 
-
-          <div  className="flex mr-20">
-            <Link
-              href="./about"
-              className="text-sm text-[#ffffff]  hover:underline">
-              Our Story
-            </Link>
-
-            <Link
-              href="./about/mission"
-              className="text-sm text-[#ffffff]  hover:underline ml-2">
-              Mission
-            </Link>
-            <Link
-              href="./blog"
-              className="text-sm text-[#ffffff]  hover:underline ml-2">
-              Blog
-            </Link>
-          </div>
-
-
-
-
+        <Link
+          href="./about/mission"
+          className="text-sm text-[#ffffff]  hover:underline ml-2">
+          Mission
+        </Link>
+        <Link
+          href="./blog"
+          className="text-sm text-[#ffffff]  hover:underline ml-2">
+          Blog
+        </Link>
+      </div>
     </footer>
   );
 };

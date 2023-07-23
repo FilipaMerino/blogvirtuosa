@@ -35,7 +35,7 @@ const Navbar = () => {
                   <Link href="./">Services</Link>
                 </li>
                 <li>
-                  <Link href="./">Blog</Link>
+                <Link href="./blog">Blog</Link>
                 </li>
                 <li>
                   {isUserLoggedIn ? (
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Link href="./">Services</Link>
               </li>
               <li>
-                <Link href="./">Blog</Link>
+                <Link href="./blog">Blog</Link>
               </li>
               <li>
                 {isUserLoggedIn ? (
