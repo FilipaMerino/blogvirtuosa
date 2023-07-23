@@ -78,27 +78,44 @@ const HomePage = () => {
         </div>
       </div>
 
-
       {/* THIS IS THE MENTAL HEALTH SESSION FROM THE HOME PAGE */}
 
+      <div className="bg-[#f2f2ef5e] h-[30rem] p-5 md:p-[5rem]">
+        <div className="flex justify-center mb-5">
+          <h4>Hello Friend,</h4>
+        </div>
 
+        <div className="flex justify-center mt-1">
+          <h1 className="text-3xl md:text-5xl italic">
+            You deserve to have a life and
+          </h1>
+        </div>
 
-
-
+        <div className="flex justify-center">
+          <h1 className="text-3xl md:text-5xl italic">business that</h1>
+          <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
+            doesn't
+          </h1>
+          <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
+            drain you.
+          </h1>
+        </div>
+        <div>
+          <p className=" mt-5 md:mt-10 text-md text-center">
+            We often forget that our work should be something that sparks joy,
+            right? You absolutely deserve a life and a business that lifts you
+            up, rather than drains you. Life's too short to feel constantly
+            exhausted or overwhelmed. Picture a business that's in sync with
+            your life, one that values your happiness just as much as your
+            success. Imagine a life where you wake up every morning excited and
+            inspired. Sounds nice, doesn't it? This is what you're meant to
+            have, this is what you deserve. Let's take this journey together,
+            realigning our work with what truly matters.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default HomePage;
-
-{
-  /* <div className="h-[37rem] flex items-center">
-      <Image src={banner} layout="fill" objectFit="cover" alt="banner" />
-      <div className="absolute  flex m-10 flex-col">
-          <h2 className="text-[#ffffff] text-2xl mb-1">Effective</h2>
-          <Title title="Business" className="text-white" />
-          <Title title="Management Solutions" className="text-white" />
-          <h3 className="text-white text-xl mb-5 mt-3">Simplify. Organize. Succeed.</h3>
-          <Link href="#" className="linkButton">Book A Free Consultation</Link>
-        </div> */
-}
