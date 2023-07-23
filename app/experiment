@@ -2,64 +2,47 @@
 
 import { useState, useEffect, useRef } from "react";
 import { uuid } from "uuidv4";
-import axios from "axios";
+import axios from 'axios';
 
 const AddPost = ({ refreshPosts }) => {
   const [modalOpen, setModalOpen] = useState(false);
   let [newPostTitle, setNewPostTitle] = useState("");
   let [newPostContent, setNewPostContent] = useState("");
-  const [selectedImage, setSelectedImage] = useState(null);
-  const uploadPreset = "ujv26lrm";
-
-  const fileInputRef = useRef(null);
+  let [newPostImage, setNewPostImage] = useState("");
 
   const handleSubmitNewPost = async (e) => {
     e.preventDefault();
 
-    if (selectedImage) {
-      const formData = new FormData();
-      formData.append("file", selectedImage);
-      formData.append("upload_preset", uploadPreset);
+    const res = await fetch("/api/posts/", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        id: uuid(),
+        title: newPostTitle,
+        content: newPostContent,
+        img: newPostImage,
+      }),
+    });
 
-      try {
-        const response = await axios.post(
-          "https://api.cloudinary.com/v1_1/dugiameli/image/upload",
-          formData
-        );
-
-        // Get the Cloudinary image URL from the response and store it as newPostImage
-
-        const newPostImage = response.data.secure_url;
-
-        const res = await fetch("/api/posts/", {
-          method: "POST",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify({
-            id: uuid(),
-            title: newPostTitle,
-            content: newPostContent,
-            img: newPostImage,
-          }),
-        });
-
-        if (res.ok) {
-          setNewPostTitle("");
-          setNewPostContent("");
-          setModalOpen(false);
-          refreshPosts();
-        }
-      } catch (error) {
-        console.error(error);
-      }
+    if (res.ok) {
+      setNewPostTitle("");
+      setNewPostContent("");
+      setModalOpen(false);
+      refreshPosts();
     }
   };
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    setSelectedImage(file);
-  };
+
+
+
+
+
+
+
+
+
 
   return (
     <div>
@@ -88,10 +71,7 @@ const AddPost = ({ refreshPosts }) => {
               placeholder="Enter New Post Title"
               className="input input-bordered mb-5 text-lg"
               value={newPostTitle}
-
-              onChange={(e) => {
-                setNewPostTitle(e.target.value)
-              }}
+              onChange={(e) => setNewPostTitle(e.target.value)}
             />
 
             <textarea
@@ -104,10 +84,8 @@ const AddPost = ({ refreshPosts }) => {
 
             <input
               type="file"
-
+              onChange={(e) => uploadImage(e.target.files)}
               className="file-input file-input-bordered  mb-5"
-              ref={fileInputRef}
-              onChange={handleImageChange}
             />
             <button className="btn btn-primary">Add Post</button>
           </div>

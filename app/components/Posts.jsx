@@ -5,6 +5,10 @@ import AddPost from "./AddPost";
 import Link from "next/link";
 import { BsTrash3Fill } from "react-icons/bs";
 
+
+
+
+
 const Posts = () => {
   const [posts, setPosts] = useState([]);
 
@@ -22,17 +26,18 @@ const Posts = () => {
     fetchPosts();
   }, []);
 
-
-
-  const deletePost = async(id) => {
+  const deletePost = async (id) => {
     const res = await fetch(`/api/posts/${id}`, {
-      method: 'DELETE'
+      method: "DELETE",
     });
 
     fetchPosts();
+  };
 
-  }
 
+
+
+  
 
   return (
     <div className="flex flex-col items-center p-10">
@@ -41,7 +46,13 @@ const Posts = () => {
       {posts.map((post) => (
         <div className="card card-compact w-96 bg-base-100 shadow-xl mb-10">
           <figure>
-            <img src={post.img} alt="Shoes" />
+          <img src={post.img} alt="post" />
+
+
+
+
+
+
           </figure>
           <div className="card-body">
             <h2 className="card-title">{post.title}</h2>
@@ -52,6 +63,11 @@ const Posts = () => {
               </Link>
               <button onClick={() => deletePost(post.id)}>
                 <BsTrash3Fill />
+              </button>
+
+
+              <button onClick={() => patchPost(post.id)}>
+                sdfgh
               </button>
             </div>
           </div>
