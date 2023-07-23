@@ -1,6 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
+
 import Banner from "./components/Banner";
 import ServiceCard from "./components/ServiceCard";
+
+import blogBack from "./components/images/blogBack.png";
+import blogBackSquare from "./components/images/blogBackSquare.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import Posts from "./components/Posts";
 
@@ -96,12 +103,12 @@ const HomePage = () => {
           <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
             doesn't
           </h1>
-          <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
+          <h1 className="text-2xl md:text-5xl italic text-[#fb653e] ml-2">
             drain you.
           </h1>
         </div>
-        <div>
-          <p className=" mt-5 md:mt-10 text-md text-center">
+        <div className="mx-5">
+          <p className=" mt-5 md:mt-10 text-md text-justify">
             We often forget that our work should be something that sparks joy,
             right? You absolutely deserve a life and a business that lifts you
             up, rather than drains you. Life's too short to feel constantly
@@ -113,6 +120,58 @@ const HomePage = () => {
             realigning our work with what truly matters.
           </p>
         </div>
+      </div>
+
+      {/* THIS IS BLOG SESSION FROM THE HOME PAGE */}
+
+
+
+
+      <div className="flex flex-col mx-5 md:flex-row p-10 md:mx-20 md: items-center md:justify-around">
+
+
+
+        <div className="md:w-[60%]">
+          <Link href="./blog">
+            <h1 className="text-3xl mb-5 md:text-5xl hover:text-[#fb653e]">
+              Our Blog
+            </h1>
+          </Link>
+
+
+          <hr className="horizontalLineCard block md:hidden"></hr>
+
+
+          <p className="md:mb-5 text-justify">Our blog is more than just a place for us to share our thoughts. It's a platform for us to connect, engage, and grow together. We've filled it with enlightening articles, helpful tips, and the latest industry trends to keep you informed and inspired. Start exploring today and let's embark on this journey of learning and discovery together!</p>
+
+
+          <div className="flex items-center text-sm mt-5">
+            <Link href="./blog" className="hover:underline">
+              Learn More
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="ml-2 text-sm w-2 "
+              />
+            </Link>
+          </div>
+        </div>
+
+        <div className=" mb-10 hidden md:block">
+          <div className="blogImagesContainer relative ">
+            <Image
+              src={blogBackSquare}
+              className="w-[20rem] "
+              alt="Blog"></Image>
+            <Image
+              src={blogBack}
+              className="w-[10rem] absolute bottom-[-10%] left-[-10%] "
+              alt="Blog"></Image>
+          </div>
+        </div>
+
+
+
+
       </div>
     </div>
   );
