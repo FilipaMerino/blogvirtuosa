@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ServiceCard = ({ title, content, href }) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl mb-5 lg:mb-1 lg:min-h-[19rem]">
+    <div className="card w-96 bg-base-100 shadow-xl mb-5 lg:mb-1 lg:min-h-[19rem] mr-5">
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
 

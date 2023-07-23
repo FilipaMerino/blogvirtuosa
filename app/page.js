@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Banner from "./components/Banner";
 import ServiceCard from "./components/ServiceCard";
+import Newsletter from "./components/Newsletter";
 
 import blogBack from "./components/images/blogBack.png";
 import blogBackSquare from "./components/images/blogBackSquare.png";
@@ -17,10 +18,10 @@ const HomePage = () => {
       <Banner />
 
       {/* THIS IS THE ABOUT SESSION FROM THE HOME PAGE */}
-      <div className="bg-[#f2f2ef5e] mb-5 md:h-[26rem] md:p-10">
+      <div className="bg-[#f2f2ef5e] mb-5 lg:h-[26rem] lg:p-10">
         <div className=" mx-5 mt-10 p-5 md:flex md:mt-[1rem] ">
           <h1 className="text-3xl  md:text-5xl">We help businesses grow.</h1>
-          <h1 className="text-3xl  md:text-5xl md:ml-3 text-[#fb653e]">
+          <h1 className="text-3xl  md:text-5xl lg:ml-3 text-[#fb653e]">
             Together
           </h1>
         </div>
@@ -47,17 +48,17 @@ const HomePage = () => {
 
       {/* THIS IS THE SERVICE SESSION FROM THE HOME PAGE */}
 
-      <div className="md:p-10">
+      <div className="lg:p-10">
         <div className="flex justify-center mb-10">
           <hr className="horizontalLineCard"></hr>
         </div>
 
-        <div className="  mx-5 my-10">
-          <div className="mb-16 md:flex justify-center">
-            <h1 className="text-3xl text-center  md:text-5xl">
+        <div className="  mx-5 my-10 flex flex-col :items-center">
+          <div className="mb-16">
+            <h1 className="text-3xl text-center  lg:text-5xl lg:mb-2">
               High Quality Services
             </h1>
-            <h1 className="text-3xl text-center  md:text-5xl">
+            <h1 className="text-3xl text-center  lg:text-5xl">
               For Your Business
             </h1>
           </div>
@@ -87,7 +88,7 @@ const HomePage = () => {
 
       {/* THIS IS THE MENTAL HEALTH SESSION FROM THE HOME PAGE */}
 
-      <div className="bg-[#f2f2ef5e] h-[30rem] p-5 md:p-[5rem]">
+      <div className="bg-[#f2f2ef5e] h-[30rem] p-5 lg:p-[5rem]">
         <div className="flex justify-center mb-5">
           <h4>Hello Friend,</h4>
         </div>
@@ -103,7 +104,7 @@ const HomePage = () => {
           <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
             doesn't
           </h1>
-          <h1 className="text-2xl md:text-5xl italic text-[#fb653e] ml-2">
+          <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
             drain you.
           </h1>
         </div>
@@ -124,26 +125,24 @@ const HomePage = () => {
 
       {/* THIS IS BLOG SESSION FROM THE HOME PAGE */}
 
-
-
-
-      <div className="flex flex-col mx-5 md:flex-row p-10 md:mx-20 md: items-center md:justify-around">
-
-
-
-        <div className="md:w-[60%]">
+      <div className="flex flex-col mx-5 lg:flex-row p-10 lg:mx-20 items-center md:justify-around">
+        <div className="lg:w-[60%] mr-20 lg:mr-10">
           <Link href="./blog">
-            <h1 className="text-3xl mb-5 md:text-5xl hover:text-[#fb653e]">
+            <h1 className="text-3xl mb-5 lg:text-5xl hover:text-[#fb653e]">
               Our Blog
             </h1>
           </Link>
 
+          <hr className="horizontalLineCard block lg:hidden"></hr>
 
-          <hr className="horizontalLineCard block md:hidden"></hr>
-
-
-          <p className="md:mb-5 text-justify">Our blog is more than just a place for us to share our thoughts. It's a platform for us to connect, engage, and grow together. We've filled it with enlightening articles, helpful tips, and the latest industry trends to keep you informed and inspired. Start exploring today and let's embark on this journey of learning and discovery together!</p>
-
+          <p className=" md:mb-5 text-justify">
+            Our blog is more than just a place for us to share our thoughts.
+            It's a platform for us to connect, engage, and grow together. We've
+            filled it with enlightening articles, helpful tips, and the latest
+            industry trends to keep you informed and inspired. Start exploring
+            today and let's embark on this journey of learning and discovery
+            together!
+          </p>
 
           <div className="flex items-center text-sm mt-5">
             <Link href="./blog" className="hover:underline">
@@ -156,7 +155,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className=" mb-10 hidden md:block">
+        <div className=" mb-10 hidden lg:block">
           <div className="blogImagesContainer relative ">
             <Image
               src={blogBackSquare}
@@ -168,11 +167,10 @@ const HomePage = () => {
               alt="Blog"></Image>
           </div>
         </div>
-
-
-
-
       </div>
+
+      {/* NEWSLETTER */}
+      <Newsletter />
     </div>
   );
 };
