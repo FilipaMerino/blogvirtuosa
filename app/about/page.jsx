@@ -10,7 +10,7 @@ import louisa from "../components/images/louisa.jpeg";
 const AboutPage = () => {
   return (
     <div className="">
-      <div className="flex items-center h-[30rem]">
+      <div className="flex items-center lg:h-[30rem]">
         <div className="hidden lg:block  flex-col justify-center items-start lg:w-[20rem] lg:ml-20">
           <p className="font-semibold	lg:mb-1">About Us.</p>
           <p className="font-semibold	lg:mb-1">Our Values.</p>
@@ -68,19 +68,19 @@ const AboutPage = () => {
 
       {/* HERE IS THE VALUES */}
 
-      <div className="flex lg:h-[30rem] lg:mx-20 justify-around">
-        <div className="flex items-center">
+      <div className="flex flex-col lg:flex-row lg:h-[30rem] md:mx-20 justify-around">
+        <div className="flex items-center justify-center mt-10">
           <h1 className="text-3xl lg:text-5xl">Our</h1>
-          <h1 className="text-3xl lg:text-5xl lg:ml-2 text-[#fb653e]">
+          <h1 className="text-3xl lg:text-5xl ml-2 text-[#fb653e]">
             Values.
           </h1>
         </div>
 
-        <div className="carousel w-[50%]">
+        <div className="carousel w-[100%] lg:w-[50%] flex">
           <div id="slide1" className="carousel-item relative w-full">
            <ValueCard title="Honesty" content="We believe that trust is the foundation of any successful partnership."/>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide6" className="btn btn-circle">
+              <a href="#slide4" className="btn btn-circle">
                 ❮
               </a>
               <a href="#slide2" className="btn btn-circle">

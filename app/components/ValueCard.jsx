@@ -6,8 +6,8 @@ import Link from "next/link";
 const ServiceCard = ({ title, content, contentBig }) => {
   return (
     <div className="flex flex-col items-center justify-center mx-[10rem]">
-      <h1 className="lg:text-3xl flex justify-center mb-5 text-[#fb653e]">{title}</h1>
-      <p className="text-lg mb-3 text-center">{content}</p>
+      <h1 className="text-2xl lg:text-3xl flex justify-center mb-5 text-[#fb653e]">{title}</h1>
+      <p className="text-md mb-3 text-center">{content}</p>
       {/* <p className="text-sm text-center">{contentBig}</p> */}
 
 
