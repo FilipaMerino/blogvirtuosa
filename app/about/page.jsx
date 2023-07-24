@@ -10,6 +10,9 @@ import louisa from "../components/images/louisa.jpeg";
 const AboutPage = () => {
   return (
     <div className="">
+
+     {/* THIS IS THE TITLE AND TEXT OF ABOUT SESSION */}
+
       <div className="flex items-center lg:h-[30rem]">
         <div className="hidden lg:block  flex-col justify-center items-start lg:w-[20rem] lg:ml-20">
           <p className="font-semibold	lg:mb-1">About Us.</p>
@@ -18,7 +21,7 @@ const AboutPage = () => {
         </div>
 
         <div className=" p-10 lg:h-[20rem] flex flex-col justify-center mx-5 lg:mx-20 lg:p-5">
-          <div className="flex mb-2 lg:mb-5">
+          <div className="flex mb-2 lg:mb-10">
             <h1 className="text-3xl lg:text-5xl">About</h1>
             <h1 className="text-3xl lg:text-5xl text-[#fb653e] ml-3">Us.</h1>
           </div>
@@ -46,17 +49,22 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* THIS IS THE TITLE AND TEXT OF ABOUT SESSION */}
+
 
       {/* THIS IS THE BANNER FROM THE ABOUT SESSION */}
-      <div className="flex items-center relative h-[20rem]">
-        <Image
+      <div className="flex flex-col items-center justify-center h-[30rem] bg-[#f2f2ef5e]">
+        {/* <Image
           src={office}
           layout="fill"
           objectFit="cover"
           alt="banner"></Image>
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="flex flex-col absolute  text-white text-center mx-4 p-5 lg:mx-[10rem]">
+        <div className="absolute inset-0 bg-[#333333] opacity-30"></div> */}
+        <div className="flex justify-center mb-10">
+          <hr className="horizontalLineCard"></hr>
+        </div>
+
+
+        <div className="flex flex-col   text-[#333333] text-center mx-4 p-5 lg:mx-[10rem]">
           <h1 className="text-lg lg:text-3xl mb-3 lg:mb-5 italic">
             "Success is the ability to live your life the way you want to live
             it, doing what you most enjoy, surrounded by people who you admire
@@ -217,6 +225,10 @@ const AboutPage = () => {
           </div>
         </div> */}
       </div>
+
+
+
+      {/* THIS IS THE TEAM SESSION */}
     </div>
   );
 };
