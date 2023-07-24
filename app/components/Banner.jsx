@@ -13,7 +13,7 @@ const Banner = () => {
             <h1 className="text-3xl md:text-5xl text-white">Business</h1>
           <div className="md:flex">
             <h1 className="text-3xl md:text-5xl text-white">Management</h1>
-            <h1 className="text-3xl md:text-5xl text-white md:mb-2">Solutions</h1>
+            <h1 className="text-3xl md:text-5xl text-white md:mb-2 md:ml-2" >Solutions</h1>
 
           </div>
           <h3 className="text-white text-lg md:text-3xl mb-5 mt-2">Simplify. Organize. Succeed.</h3>
