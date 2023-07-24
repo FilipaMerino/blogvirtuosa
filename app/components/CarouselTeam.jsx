@@ -2,15 +2,15 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import louisa from "../../components/images/Louisa.jpeg";
-import louisa2 from "../../components/images/Louisa2.jpeg";
-import louisa3 from "../../components/images/Louisa3.jpeg";
+import louisa from ".images/Louisa.jpeg";
+import louisa2 from ".images/Louisa2.jpeg";
+import louisa3 from ".images/Louisa3.jpeg";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const images = [louisa, louisa2, louisa3];
 
-const Team = () => {
+const CarouselTeam = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -50,4 +50,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default CarouselTeam;
