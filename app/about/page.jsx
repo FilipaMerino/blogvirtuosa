@@ -10,14 +10,17 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div className="mx-20 p-5  ">
-      <div className=" h-[20rem] flex flex-col justify-center">
-        <div className="flex mb-5">
+    <div className="">
+      {/* THIS IS THE TITLE AND TEXT OF ABOUT SESSION */}
+      <div className=" p-10 lg:h-[20rem] flex flex-col justify-center mx-5 lg:mx-20 lg:p-5">
+        <div className="flex mb-2 lg:mb-5">
           <h1 className="text-3xl lg:text-5xl">About</h1>
           <h1 className="text-3xl lg:text-5xl text-[#fb653e] ml-3">Us.</h1>
         </div>
 
-        <p>
+        <hr className="horizontalLineCard block  lg:hidden"></hr>
+
+        <p className="mb-5">
           At Admin Virtuosa, our mission is to serve as a{" "}
           <strong>support system</strong> for small business owners and
           entrepreneurs to fulfill their objectives while advocating for a{" "}
@@ -37,12 +40,22 @@ const AboutPage = () => {
         </p>
       </div>
 
-      <div className="flex items-center relative h-[15rem]">
+      {/* THIS IS THE BANNER FROM THE ABOUT SESSION */}
+      <div className="flex items-center relative h-[20rem]">
         <Image
           src={office}
           layout="fill"
           objectFit="cover"
           alt="banner"></Image>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="flex flex-col absolute  text-white text-center mx-4 p-5 lg:mx-[10rem]">
+          <h1 className="text-lg lg:text-3xl mb-3 lg:mb-5 italic">
+            "Success is the ability to live your life the way you want to live
+            it, doing what you most enjoy, surrounded by people who you admire
+            and respect."
+          </h1>
+          <p className="text-sm lg:text-lg">Brian Tracy</p>
+        </div>
       </div>
     </div>
   );
