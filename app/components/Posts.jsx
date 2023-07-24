@@ -5,22 +5,17 @@ import AddPost from "./AddPost";
 import Link from "next/link";
 import { BsTrash3Fill } from "react-icons/bs";
 
-
-
-
-
 const Posts = () => {
   const [posts, setPosts] = useState([]);
 
   const fetchPosts = async () => {
     const res = await fetch("/api/posts");
     const posts = await res.json();
-    const sortedPosts = posts.sort(
-      (a, b) => new Date(a.createdAt) - new Date(b.createdAt)
-    ).reverse();
+    const sortedPosts = posts
+      .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+      .reverse();
 
     setPosts([...sortedPosts]);
-
   };
 
   useEffect(() => {
@@ -35,11 +30,6 @@ const Posts = () => {
     fetchPosts();
   };
 
-
-
-
-
-
   return (
     <div className="flex flex-col items-center p-10">
       <AddPost refreshPosts={fetchPosts} />
@@ -47,11 +37,10 @@ const Posts = () => {
       {posts.map((post) => (
         <div className="card card-compact w-96 bg-base-100 shadow-xl mb-10">
           <figure>
-          <img src={post.img} alt="post" />
 
-
-
-
+            <Link href={`/blog/${post.id}`}>
+              <img src={post.img} alt="post" />
+            </Link>
 
 
           </figure>
@@ -65,9 +54,6 @@ const Posts = () => {
               <button onClick={() => deletePost(post.id)}>
                 <BsTrash3Fill />
               </button>
-
-
-
             </div>
           </div>
         </div>
