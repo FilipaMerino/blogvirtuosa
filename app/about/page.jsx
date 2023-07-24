@@ -10,8 +10,7 @@ import louisa from "../components/images/louisa.jpeg";
 const AboutPage = () => {
   return (
     <div className="">
-
-     {/* THIS IS THE TITLE AND TEXT OF ABOUT SESSION */}
+      {/* THIS IS THE TITLE AND TEXT OF ABOUT SESSION */}
 
       <div className="flex items-center lg:h-[30rem]">
         <div className="hidden lg:block  flex-col justify-center items-start lg:w-[20rem] lg:ml-20">
@@ -46,10 +45,15 @@ const AboutPage = () => {
             to create a genuine partnership built on trust, respect and a shared
             vision for growth and opportunity.
           </p>
+          <div className="flex gap-3">
+            <Link
+              href="./about/team"
+              className="btn w-32 flex justify-center mt-10">
+              Our Team
+            </Link>
+          </div>
         </div>
       </div>
-
-
 
       {/* THIS IS THE BANNER FROM THE ABOUT SESSION */}
       <div className="flex flex-col items-center justify-center h-[30rem] bg-[#f2f2ef5e]">
@@ -62,7 +66,6 @@ const AboutPage = () => {
         <div className="flex justify-center mb-10">
           <hr className="horizontalLineCard"></hr>
         </div>
-
 
         <div className="flex flex-col   text-[#333333] text-center mx-4 p-5 lg:mx-[10rem]">
           <h1 className="text-lg lg:text-3xl mb-3 lg:mb-5 italic">
@@ -79,14 +82,15 @@ const AboutPage = () => {
       <div className="flex flex-col lg:flex-row lg:h-[30rem] md:mx-20 justify-around">
         <div className="flex items-center justify-center mt-10">
           <h1 className="text-3xl lg:text-5xl">Our</h1>
-          <h1 className="text-3xl lg:text-5xl ml-2 text-[#fb653e]">
-            Values.
-          </h1>
+          <h1 className="text-3xl lg:text-5xl ml-2 text-[#fb653e]">Values.</h1>
         </div>
 
         <div className="carousel w-[100%] lg:w-[50%] flex">
           <div id="slide1" className="carousel-item relative w-full">
-           <ValueCard title="Honesty" content="We believe that trust is the foundation of any successful partnership."/>
+            <ValueCard
+              title="Honesty"
+              content="We believe that trust is the foundation of any successful partnership."
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" className="btn btn-circle">
                 ❮
@@ -98,7 +102,10 @@ const AboutPage = () => {
           </div>
 
           <div id="slide2" className="carousel-item relative w-full">
-            <ValueCard title="Integrity" content="We are committed to doing all things in an ethical, sustainable, and respectful manner." />
+            <ValueCard
+              title="Integrity"
+              content="We are committed to doing all things in an ethical, sustainable, and respectful manner."
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" className="btn btn-circle">
                 ❮
@@ -109,13 +116,11 @@ const AboutPage = () => {
             </div>
           </div>
 
-
-
-
           <div id="slide3" className="carousel-item relative w-full">
-          <ValueCard title="Respect" content="We treat all clients and team members with dignity, fairness and respect. We provide an inclusive environment that values diversity and promotes equal opportunity."/>
-
-
+            <ValueCard
+              title="Respect"
+              content="We treat all clients and team members with dignity, fairness and respect. We provide an inclusive environment that values diversity and promotes equal opportunity."
+            />
 
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" className="btn btn-circle">
@@ -127,9 +132,11 @@ const AboutPage = () => {
             </div>
           </div>
 
-
           <div id="slide4" className="carousel-item relative w-full">
-          <ValueCard title="Love" content="We believe that love has the ability to create a positive and nurturing environment that supports the growth and success of our clients." />
+            <ValueCard
+              title="Love"
+              content="We believe that love has the ability to create a positive and nurturing environment that supports the growth and success of our clients."
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" className="btn btn-circle">
                 ❮
@@ -141,7 +148,10 @@ const AboutPage = () => {
           </div>
 
           <div id="slide5" className="carousel-item relative w-full">
-          <ValueCard title="Humility" content="We believe that collaboration is the key to unlocking creativity and success."/>
+            <ValueCard
+              title="Humility"
+              content="We believe that collaboration is the key to unlocking creativity and success."
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" className="btn btn-circle">
                 ❮
@@ -152,9 +162,11 @@ const AboutPage = () => {
             </div>
           </div>
 
-
           <div id="slide6" className="carousel-item relative w-full">
-          <ValueCard title="Colaboration" content="We believe that collaboration is the key to unlocking creativity and success. We are committed to fostering a culture of teamwork, open communication, and mutual support"/>
+            <ValueCard
+              title="Colaboration"
+              content="We believe that collaboration is the key to unlocking creativity and success. We are committed to fostering a culture of teamwork, open communication, and mutual support"
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide5" className="btn btn-circle">
                 ❮
@@ -164,77 +176,83 @@ const AboutPage = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      {/* {/* THIS IS THE TEAM SESSION */}
 
+      {/* <div className="bg-[#f2f2ef5e] flex items-center my-auto">
+    <div className="relative flex-col items-start w-[35%] justify-center lg:h-[40rem] mx-20 hidden lg:flex lg:mb-20">
+        <div className="relative z-10 bottom-3 left-40 transform -translate-y-16 group overflow-hidden">
+            <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out z-10"></div>
+            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">Text for first image</p>
+            <Image src={filipa} className="w-64 rounded-md drop-shadow-lg z-0"/>
+        </div>
+        <div className="absolute top-80 z-10 group overflow-hidden">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out z-10"></div>
+            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">Text for second image</p>
+            <Image className="w-64 rounded-md drop-shadow-md z-0" src={louisa}/>
+        </div> */}
 
+      <div className="bg-[#f2f2ef5e] flex items-center my-auto">
+        <div className="relative  flex-col items-start w-[35%] justify-center lg:h-[40rem] mx-20 hidden lg:flex lg:mb-20">
+          <div className="relative z-10 bottom-3 left-40 transform -translate-y-16 group overflow-hidden">
+            <Link href="./about/mission">
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity z-10"></div>
+              <h2 className="text-white text-bold text-2xl text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                Filipa Merino
+              </h2>
+              <Image
+                src={filipa}
+                className="w-64 rounded-md drop-shadow-lg z-0"
+              />
+            </Link>
+          </div>
 
+          <div className="absolute top-80 z-10 group overflow-hidden">
+            <Link href="./about/team">
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity z-10"></div>
+              <h2 className="text-white text-bold text-2xl text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                Louisa Thiessen
+              </h2>
 
-
+              <Image
+                className="w-64 rounded-md drop-shadow-md z-0"
+                src={louisa}
+              />
+            </Link>
+          </div>
         </div>
 
-        {/* <div className="flex items-center justify-start ml-20 w-[30rem] ">
-          <div className=" carousel rounded-box">
-
-
-
-            <div className="carousel-item w-full h-[20rem] ml-20">
-           <ValueCard title="Honesty" content="We believe that trust is the foundation of any successful partnership." contentBig=" Without honesty there is no trust which is why honesty is our #1 value. We strive to earn and maintain the confidence of our clients and are dedicated to providing accurate, objective, and unbiased advice to our clients."/>
-
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="/images/stock/photo-1494253109108-2e30c049369b.jpg"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="/images/stock/photo-1559181567-c3190ca9959b.jpg"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
+        <div className="lg:mr-20 lg:w-[50%] p-5">
+          <div className="flex justify-center lg:justify-start items-start lg:mb-5">
+            <h1 className="text-3xl lg:text-5xl">Our</h1>
+            <h1 className="text-3xl lg:text-5xl text-[#fb653e] lg:ml-3 ml-2">
+              Team.
+            </h1>
           </div>
-        </div> */}
+
+
+          <div className=" text-center lg:text-start mx-5 p-5 flex flex-col items-center lg:items-start lg:mx-0 lg:p-0">
+            <p className="">
+              Lorem ipsum is placeholder text commonly used in the graphic,
+              print, and publishing industries for previewing layouts and visual
+              mockups.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <Link href="./about/team" className="btn mt-10">
+              Meet Our Team
+            </Link>
+          </div>
+        </div>
       </div>
-
-
-
-      {/* THIS IS THE TEAM SESSION */}
     </div>
   );
 };
 
 export default AboutPage;
 
-// This is a good quote to have on a banner on this page, with the opacity bigger
+{
+  /* // This is a good quote to have on a banner on this page, with the opacity bigger
 // “ Success is the ability to live your life the way you want to live it, doing what you most enjoy, surrounded by people who you admire and respect. ”
-// Brian Tracy
+// Brian Tracy */
+}
