@@ -1,17 +1,16 @@
+"use client";
+import ValueCard from "../components/ValueCard";
+
 import Image from "next/image";
 import Link from "next/link";
 import office from "../components/images/office.jpeg";
-
-export const metadata = {
-  title: "About Admin Virtuosa",
-  description: "find out more about admin virtuosa",
-  keywords: "values",
-};
+import filipa from "../components/images/filipa.jpeg";
+import louisa from "../components/images/louisa.jpeg";
 
 const AboutPage = () => {
   return (
     <div className="">
-      <div className="flex items-center">
+      <div className="flex items-center h-[30rem]">
         <div className="hidden lg:block  flex-col justify-center items-start lg:w-[20rem] lg:ml-20">
           <p className="font-semibold	lg:mb-1">About Us.</p>
           <p className="font-semibold	lg:mb-1">Our Values.</p>
@@ -69,14 +68,155 @@ const AboutPage = () => {
 
       {/* HERE IS THE VALUES */}
 
-<div>
+      <div className="flex lg:h-[30rem] lg:mx-20 justify-around">
+        <div className="flex items-center">
+          <h1 className="text-3xl lg:text-5xl">Our</h1>
+          <h1 className="text-3xl lg:text-5xl lg:ml-2 text-[#fb653e]">
+            Values.
+          </h1>
+        </div>
+
+        <div className="carousel w-[50%]">
+          <div id="slide1" className="carousel-item relative w-full">
+           <ValueCard title="Honesty" content="We believe that trust is the foundation of any successful partnership."/>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide6" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide2" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+
+          <div id="slide2" className="carousel-item relative w-full">
+            <ValueCard title="Integrity" content="We are committed to doing all things in an ethical, sustainable, and respectful manner." />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide3" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
 
 
-  
-</div>
+
+
+          <div id="slide3" className="carousel-item relative w-full">
+          <ValueCard title="Respect" content="We treat all clients and team members with dignity, fairness and respect. We provide an inclusive environment that values diversity and promotes equal opportunity."/>
 
 
 
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide4" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+
+
+          <div id="slide4" className="carousel-item relative w-full">
+          <ValueCard title="Love" content="We believe that love has the ability to create a positive and nurturing environment that supports the growth and success of our clients." />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide5" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+
+          <div id="slide5" className="carousel-item relative w-full">
+          <ValueCard title="Humility" content="We believe that collaboration is the key to unlocking creativity and success."/>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide6" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+
+
+          <div id="slide6" className="carousel-item relative w-full">
+          <ValueCard title="Colaboration" content="We believe that collaboration is the key to unlocking creativity and success. We are committed to fostering a culture of teamwork, open communication, and mutual support"/>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide5" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide1" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+        {/* <div className="flex items-center justify-start ml-20 w-[30rem] ">
+          <div className=" carousel rounded-box">
+
+
+
+            <div className="carousel-item w-full h-[20rem] ml-20">
+           <ValueCard title="Honesty" content="We believe that trust is the foundation of any successful partnership." contentBig=" Without honesty there is no trust which is why honesty is our #1 value. We strive to earn and maintain the confidence of our clients and are dedicated to providing accurate, objective, and unbiased advice to our clients."/>
+
+            </div>
+            <div className="carousel-item w-full">
+              <img
+                src="/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+                className="w-full"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+            <div className="carousel-item w-full">
+              <img
+                src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+                className="w-full"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+            <div className="carousel-item w-full">
+              <img
+                src="/images/stock/photo-1494253109108-2e30c049369b.jpg"
+                className="w-full"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+            <div className="carousel-item w-full">
+              <img
+                src="/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+                className="w-full"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+            <div className="carousel-item w-full">
+              <img
+                src="/images/stock/photo-1559181567-c3190ca9959b.jpg"
+                className="w-full"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+            <div className="carousel-item w-full">
+              <img
+                src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+                className="w-full"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+          </div>
+        </div> */}
+      </div>
     </div>
   );
 };
