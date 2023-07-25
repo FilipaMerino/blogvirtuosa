@@ -31,7 +31,7 @@ const Filipa = () => {
   return (
     <div>
       <div className="lg:h-[30rem] flex flex-col lg:flex lg:flex-row lg:items-center lg:mx-20">
-        {/* Louisa */}
+        {/* Filipa */}
         <div className="flex justify-center my-10">
           <div className="w-80 rounded-box drop-shadow-lg">
             <Carousel
