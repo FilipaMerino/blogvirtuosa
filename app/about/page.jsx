@@ -49,13 +49,7 @@ const AboutPage = () => {
             vision for growth and opportunity.
           </p>
 
-          <div className="flex gap-3">
-            <Link
-              href="./about/team"
-              className="btn w-32 flex justify-center mt-10">
-              Our Team
-            </Link>
-          </div>
+          
         </div>
 
 
@@ -251,7 +245,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
-   
+
 
   );
 };

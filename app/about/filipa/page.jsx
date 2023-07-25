@@ -56,7 +56,7 @@ const Filipa = () => {
         <div className="lg:ml-10">
           <h1 className="text-3xl lg:text-5xl lg:mb-2">Filipa Merino</h1>
           <p className="text-sm">
-            <strong>Web Developer</strong> of Admin Virtuosa.
+            <strong>Web Developer</strong> at Admin Virtuosa.
           </p>
           <hr className="horizontalLineTeam "></hr>
 
@@ -111,7 +111,7 @@ const Filipa = () => {
         </p>
       </div>
 
-      
+
 
       {/* Filipa */}
     </div>
