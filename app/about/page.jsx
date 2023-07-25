@@ -49,7 +49,7 @@ const AboutPage = () => {
             vision for growth and opportunity.
           </p>
 
-          
+
         </div>
 
 
@@ -215,9 +215,9 @@ const AboutPage = () => {
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="my-10 flex justify-start">
+          <div className="my-10 flex justify-center lg:justify-start">
             <div className="avatar relative">
-              <div className="w-20 rounded">
+              <div className="w-32 lg:w-20 rounded">
                 <Link href="./about/louisa">
                   <Image
                     src={louisa}
@@ -230,7 +230,7 @@ const AboutPage = () => {
             </div>
 
             <div className="avatar relative ml-5">
-              <div className="w-20 rounded ">
+              <div className="w-32 lg:w-20 rounded ">
                 <Link href="./about/filipa">
                   <Image
                     src={filipa}
