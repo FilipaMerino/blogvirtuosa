@@ -81,6 +81,11 @@ const AddPost = ({ refreshPosts }) => {
             ✕
           </button>
 
+
+
+
+
+
           <h3 className="font-bold text-2xl mb-10 text-center">Add New Post</h3>
 
           <div className="flex flex-col">
@@ -110,7 +115,7 @@ const AddPost = ({ refreshPosts }) => {
               ref={fileInputRef}
               onChange={handleImageChange}
             />
-            <button className="btn btn-primary">Add Post</button>
+            <button className="btn btn-primary ">Add Post</button>
           </div>
         </form>
       </dialog>

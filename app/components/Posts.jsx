@@ -3,7 +3,11 @@
 import { useState, useEffect } from "react";
 import AddPost from "./AddPost";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { BsTrash3Fill } from "react-icons/bs";
+
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -35,25 +39,39 @@ const Posts = () => {
       <AddPost refreshPosts={fetchPosts} />
 
       {posts.map((post) => (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl mb-10">
-          <figure>
-
-            <Link href={`/blog/${post.id}`}>
-              <img src={post.img} alt="post" />
-            </Link>
-
-
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">{post.title}</h2>
-            <p>{post.content}</p>
-            <div className="card-actions justify-end items-center">
-              <Link href="" className="btn btn-link">
-                Learn More
+        <div className="mb-10">
+          <div className=" flex flex-col items-center lg:w-[40rem] lg:mb-10">
+            <h1 className="text-3xl lg:text-5xl mb-10">{post.title}</h1>
+            <figure>
+              <Link href={`/blog/${post.id}`}>
+                <img src={post.img} alt="post" className="w-[40rem] mb-5 rounded" />
               </Link>
-              <button onClick={() => deletePost(post.id)}>
-                <BsTrash3Fill />
-              </button>
+            </figure>
+            <div className="">
+              <p className="text-sm mb-5">{post.content}</p>
+
+              <div className="flex justify-between">
+                <div className="flex justify-start items-center ">
+                  <Link
+                    href=""
+                    className="text-xs hover:underline hover:text-[#fb653e]">
+                    Learn More
+                  </Link>
+                  <a href={post.href}>
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="flex ml-2 text-sm  md:w-2"
+                    />
+                  </a>
+                </div>
+
+                <div className="flex justify-end">
+                  <button onClick={() => deletePost(post.id)}>
+                    <BsTrash3Fill className="hover:text-[#fb653e]"/>
+                  </button>
+                </div>
+              </div>
+          <hr className="horizontalLineBlog w-full mt-5"></hr>
             </div>
           </div>
         </div>

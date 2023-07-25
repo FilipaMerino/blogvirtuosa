@@ -115,3 +115,15 @@ body {
 .avatar:hover .overlay {
   opacity: 1;
 }
+
+
+
+/* BLOG */
+.horizontalLineBlog{
+
+  border: 0.5px solid rgba(233, 236, 239, 10);;
+  border-radius: 10px;
+
+  background-color: #333333;
+
+}
