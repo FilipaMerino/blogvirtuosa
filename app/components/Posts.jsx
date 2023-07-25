@@ -41,14 +41,14 @@ const Posts = () => {
       {posts.map((post) => (
         <div className="mb-10">
           <div className=" flex flex-col items-center w-[30rem] lg:w-[40rem] lg:mb-10">
-            <h1 className="text-3xl lg:text-5xl mb-10">{post.title}</h1>
+            <h3 className="text-xl lg:text-3xl mb-10 text-center">{post.title}</h3>
             <figure>
               <Link href={`/blog/${post.id}`}>
                 <img src={post.img} alt="post" className="hover:brightness-90 transition-all duration-200 w-[40rem] mb-5 rounded" />
               </Link>
             </figure>
             <div className="">
-              <p className="text-sm mb-5">{post.content}</p>
+              <p className="text-sm mb-5 text-justify">{post.content.substring(0, 180) + "..."}</p>
 
               <div className="flex justify-between">
                 <div className="flex justify-start items-center ">
