@@ -42,7 +42,7 @@ const Newsletter = () => {
                 />
 
                 <button className=" newsletterButton" type="submit">
-                  Add Post
+                  Subscribe
                 </button>
               </div>
             </form>

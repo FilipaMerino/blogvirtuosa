@@ -72,7 +72,7 @@ const Footer = () => {
         <Link
           href="./about/mission"
           className="text-sm text-[#ffffff]  hover:underline ml-2">
-          Mission
+          Services
         </Link>
         <Link
           href="./blog"
