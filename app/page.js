@@ -37,12 +37,10 @@ const HomePage = () => {
           </p>
         </div>
         <div className="flex mx-5 p-5 md:mt-5 md:mx-5 w-[20rem] justify-start">
-          <Link href="/about/team" className="btn">
-            Meet The Team
+          <Link href="/about/team" className="btn  border-none drop-shadow-md w-64 hover:bg-[#333333] hover:text-white ">
+            About us
           </Link>
-          <Link href="/about/mission" className="btn ml-2">
-            Our Story
-          </Link>
+
         </div>
       </div>
 
