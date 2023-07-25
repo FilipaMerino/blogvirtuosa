@@ -196,7 +196,7 @@ const AboutPage = () => {
       <div className="bg-[#f2f2ef5e] flex items-center my-auto">
         <div className="relative  flex-col items-start w-[35%] justify-center lg:h-[40rem] mx-20 hidden lg:flex lg:mb-20">
           <div className="relative z-10 bottom-3 left-40 transform -translate-y-16 group overflow-hidden">
-            <Link href="./about/mission">
+            <Link href="./about/team">
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity z-10"></div>
               <h2 className="text-white text-bold text-2xl text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
                 Filipa Merino
@@ -239,7 +239,7 @@ const AboutPage = () => {
               mockups.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <Link href="./about/team" className="btn mt-10">
+            <Link href="./about/team" className="btn bg-[#333333] text-white hover:text-[#333333] mt-10">
               Meet Our Team
             </Link>
           </div>

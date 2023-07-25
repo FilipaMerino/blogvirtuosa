@@ -10,6 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 const images = [louisa, louisa2, louisa3];
 
+
 const CarouselTeam = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 

@@ -20,7 +20,7 @@ body {
   border: 2px solid #fb653e;
   border-radius: 10px;
   margin-bottom: 15px;
-  margin-top: 10px;
+  
   background-color: #fb653e;
 }
 
@@ -70,4 +70,29 @@ body {
   height: 42px;
   padding: 20px;
 
+}
+
+
+/* TEAM PAGE */
+
+.horizontalLineTeam{
+  width: 300px;
+  height:2px;
+  border: 2px solid #fb653e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  background-color: #fb653e;
+}
+
+
+.verticalLineTeam{
+
+  height: 200px;
+  width: 1px;
+  border: 2px solid #fb653e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  background-color: #fb653e;
 }
