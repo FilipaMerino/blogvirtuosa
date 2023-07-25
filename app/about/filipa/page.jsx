@@ -102,7 +102,7 @@ const Filipa = () => {
 
       <div className=" flex flex-col items-center  mx-20 lg:h-[15rem]">
         <hr className="horizontalLineCard mt-10"></hr>
-        <p className="my-10 text-center">
+        <p className="my-10">
           Filipa is a certified web developer who is on a mission to help business owners stand out
           online. With her extensive knowledge of how the human brain processes
           information and interacts with technology, she is able to understand
@@ -110,6 +110,8 @@ const Filipa = () => {
           that are both user-friendly and engaging.
         </p>
       </div>
+
+      
 
       {/* Filipa */}
     </div>

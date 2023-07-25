@@ -9,7 +9,7 @@ const ServiceCard = ({ title, content, href }) => {
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
 
-        <hr className="horizontalLineCard"></hr>
+        <hr className="horizontalLineCard mt-5"></hr>
         <p>{content}</p>
         <div className="card-actions justify-start lg:mt-2 text-sm flex items-center hover:underline">
           <Link href={href} className="">

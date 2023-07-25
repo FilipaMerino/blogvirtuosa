@@ -20,7 +20,7 @@ body {
   border: 2px solid #fb653e;
   border-radius: 10px;
   margin-bottom: 15px;
-  
+
   background-color: #fb653e;
 }
 
@@ -95,4 +95,23 @@ body {
   margin-bottom: 15px;
   margin-top: 10px;
   background-color: #fb653e;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the transparency by changing the last value (0.3) */
+  opacity: 0; /* Initially set opacity to 0, so it's invisible until hovered */
+  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect on opacity change */
+}
+
+
+.avatar:hover .overlay {
+  opacity: 1;
 }
