@@ -46,12 +46,12 @@ const HomePage = () => {
 
       {/* THIS IS THE SERVICE SESSION FROM THE HOME PAGE */}
 
-      <div className="lg:p-10">
+      <div className="lg:p-10" id="service">
         <div className="flex justify-center mb-10">
           <hr className="horizontalLineCard"></hr>
         </div>
 
-        <div className="  mx-5 my-10 flex flex-col :items-center">
+        <div className="mx-5 my-10 flex flex-col :items-center">
           <div className="mb-16">
             <h1 className="text-3xl text-center  lg:text-5xl lg:mb-2">
               High Quality Services
