@@ -18,14 +18,15 @@ const WebDev = () => {
         <Image src={dev} layout="fill" objectFit="cover" alt="banner"></Image>
         <div className="absolute inset-0 bg-black opacity-70"></div>
 
-        <div className="flex  mx-5 md:mx-10 flex-col p-5 absolute">
+        <div className="flex mx-5 md:mx-10 flex-col p-5 absolute">
           <h3 className="lg:text-lg mb-5 text-white">WEB DEVELOPMENT</h3>
-          <h1 className="text-3xl md:text-5xl text-white md:mb-5 w-[20rem] lg:w-[35%] font-extrabold">
+          <h1 className="text-3xl md:text-5xl text-white mb-5 lg:w-[35%] font-bold md:font-extrabold">
             Website Creation
           </h1>
+
           <hr className="horizontalLineWebDev"></hr>
 
-          <h1 className="text-white text-md text-3xl md:text-5xl lg:mr-[30rem]  md:mt-5">
+          <h1 className="text-white text-md text-3xl md:text-5xl lg:mr-[30rem] mt-5">
             We design awesome websites that bring growth to your businesses.
           </h1>
         </div>
@@ -34,12 +35,12 @@ const WebDev = () => {
       {/* DIV WITH PARAGRAPH ABOUT BUILDING WEBSITES */}
       <div className="lg:h-[30rem] lg:mx-20">
         <div className="flex items-center">
-          <div className="w-[50%]">
+          <div className="w-[50%] hidden lg:block">
             <Image src={development} />
           </div>
 
           <div>
-            <p className="text-md w-[25rem] mx-20">
+            <p className="text-md lg:w-[25rem] mx-20 my-10 text-center lg:my-0">
               Our team will design you a powerful website optimized to drive
               engagement and transform visitors into loyal customers.
             </p>
@@ -53,10 +54,10 @@ const WebDev = () => {
           <hr className="horizontalLineCard"></hr>
         </div>
 
-        <div className="lg:h-[30rem] lg:mb-5 flex flex-col justify-center mx-20 ">
+        <div className="lg:h-[30rem] mt-0 flex flex-col justify-center mx-20 ">
           <div className="flex justify-center mb-3  lg:mb-5">
             <h1 className="text-3xl lg:text-5xl">Our</h1>
-            <h1 className="text-[#fb653e] text-3xl lg:text-5xl lg:ml-3">
+            <h1 className="text-[#fb653e] text-3xl lg:text-5xl ml-3">
               Process
             </h1>
           </div>
@@ -131,28 +132,36 @@ const WebDev = () => {
         </div>
       </div>
 
-      {/* THIS IS OUR WEBSITES DIV */}
-      <div className="lg:h-[20rem] flex items-center lg:mx-20">
-        <div className="w-[90%]">
-          <h1 className="text-3xl lg:text-5xl">Our Websites are</h1>
+      {/* THIS IS OUR WEBSITE DIV */}
+      <div className="lg:h-[20rem] flex flex-col items-center lg:flex lg:flex-row lg:items-center lg:mx-20">
+        <div className="flex justify-center lg:hidden p-10">
+          <hr className="horizontalLineCard"></hr>
         </div>
 
-        <div className="lg:flex lg:justify-around  gap-10">
-          <div className="flex flex-col items-center lg:w-[50%]">
-            <Image src={responsive} className="w-32 lg:mb-5" />
+        <div className="lg:w-[90%]">
+          <h1 className="text-3xl mb-5 lg:mb-0 lg:text-5xl">
+            Our Websites are
+          </h1>
+        </div>
+
+        <div className="lg:flex lg:justify-around p-10 lg:p-0 lg:gap-10">
+          <div className="flex flex-col items-center lg:w-[50%] mb-10 lg:mb-0">
+            <Image src={responsive} className="w-32 mb-3 lg:mb-5" />
             <h5 className="text-xl lg:text-md text-center">Responsive</h5>
             <p className="text-xs lg:w-[90%] text-center lg:mt-3">
               Web design is all about flexibility and adaptability. Imagine a
               website that automatically scales, resizes, and alters its layout
-              to look perfect on any device
+              to look perfect on any device.
             </p>
           </div>
 
-          <div className="flex flex-col items-center lg:w-[50%]">
-            <Image src={SEO} className="w-32 lg:mb-5" />
-            <h5 className="text-xl lg:text-md text-center">Optimized for Search Engines</h5>
+          <div className="flex flex-col items-center lg:w-[50%] mb-10 lg:mb-0">
+            <Image src={SEO} className="w-32 mb-3 lg:mb-5" />
+            <h5 className="text-xl lg:text-md text-center">
+              Optimized for Search Engines
+            </h5>
             <p className="text-xs lg:w-[70%] text-center lg:mt-3">
-              We will make it easier for potential customers to find you
+              We will make it easier for potential customers to find you.
             </p>
           </div>
         </div>
