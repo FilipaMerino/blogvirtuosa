@@ -20,13 +20,13 @@ const WebDev = () => {
 
         <div className="flex mx-5 md:mx-10 flex-col p-5 absolute">
           <h3 className="lg:text-lg mb-5 text-white">WEB DEVELOPMENT</h3>
-          <h1 className="text-3xl md:text-5xl text-white mb-5 lg:w-[35%] font-bold md:font-extrabold">
+          <h1 className="text-3xl md:text-5xl text-white mb-5 lg:w-[30rem] font-bold md:font-extrabold">
             Website Creation
           </h1>
 
           <hr className="horizontalLineWebDev"></hr>
 
-          <h1 className="text-white text-md text-3xl md:text-5xl lg:mr-[30rem] mt-5">
+          <h1 className="text-white text-lg text-3xl md:text-4xl lg:w-[40rem] lg:mr-[30rem] mt-5">
             We design awesome websites that bring growth to your businesses.
           </h1>
         </div>
