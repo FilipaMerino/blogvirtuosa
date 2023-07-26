@@ -26,21 +26,21 @@ const WebDev = () => {
 
           <hr className="horizontalLineWebDev"></hr>
 
-          <h1 className="text-white text-lg text-3xl md:text-4xl lg:w-[40rem] lg:mr-[30rem] mt-5">
+          <h1 className="text-white text-lg md:text-4xl lg:w-[40rem] lg:mr-[30rem] mt-5">
             We design awesome websites that bring growth to your businesses.
           </h1>
         </div>
       </div>
 
       {/* DIV WITH PARAGRAPH ABOUT BUILDING WEBSITES */}
-      <div className="lg:h-[30rem] lg:mx-20">
+      <div className="lg:h-[30rem] lg:mx-20 flex justify-center">
         <div className="flex items-center">
-          <div className="w-[50%] hidden lg:block">
+          <div className="w-[50%] hidden lg:flex">
             <Image src={development} />
           </div>
 
           <div>
-            <p className="text-md lg:w-[25rem] mx-20 my-10 text-center lg:my-0">
+            <p className="text-lg lg:w-[25rem] mx-20 my-10 text-center lg:my-0">
               Our team will design you a powerful website optimized to drive
               engagement and transform visitors into loyal customers.
             </p>
