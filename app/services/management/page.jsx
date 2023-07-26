@@ -57,9 +57,7 @@ const BusinessManagement = () => {
           </div>
 
           <div className="lg:mx-20 mb-10 lg:mb-0">
-            <div className="flex justify-center mb-3">
-              <hr className="horizontalLineCard"></hr>
-            </div>
+            
             <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
               Project Management
             </h1>
@@ -79,9 +77,7 @@ const BusinessManagement = () => {
       <div className="lg:h-[30rem] flex items-center py-10 lg:p-0">
         <div className="flex mx-20 items-center">
           <div className="lg:mx-20">
-            <div className="flex justify-center mb-3">
-              <hr className="horizontalLineCard"></hr>
-            </div>
+
 
             <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
               Team Management
@@ -113,9 +109,7 @@ const BusinessManagement = () => {
           </div>
 
           <div className="lg:mx-20">
-            <div className="flex justify-center mb-3">
-              <hr className="horizontalLineCard"></hr>
-            </div>
+
             <h1 className="text-3xl lg:text-5xl text-center lg:text-start lg:mb-10 mb-5">
               Operations Management
             </h1>

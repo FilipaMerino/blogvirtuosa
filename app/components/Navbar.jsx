@@ -61,19 +61,19 @@ const Navbar = () => {
           <div className="navbar-center hidden lg:flex lg:justify-between">
             <ul className="menu menu-horizontal px-1 text-white">
               <li>
-                <Link href="./about">About</Link>
+                <Link href="/about">About</Link>
               </li>
 
               <li>
-                <Link href="./#service">Services</Link>
+                <Link href="/#service">Services</Link>
               </li>
               <li>
-                <Link href="./blog">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
                 {isUserLoggedIn ? (
                   <button type="button" onClick={signOut}>
-                    <Link href="./">
+                    <Link href="/">
                       <FiLogOut />
                     </Link>
                   </button>
