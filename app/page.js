@@ -74,7 +74,7 @@ const HomePage = () => {
               content="A remote assistant to help with administrative, technical and creative services for businesses, entrepreneurs or individuals."
             />
             <ServiceCard
-              href="./services/webdevelopment"
+              href="./services/webdev"
               title="Web Development"
               content="The process of designing a unique and personalized website to help
   promote brand awareness, sell products, services or other
