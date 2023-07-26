@@ -55,14 +55,48 @@ const BusinessManagement = () => {
           </div>
 
           <div className="lg:mx-20">
-            <h1 className="text-3xl lg:text-5xl lg:mb-10">Project Management</h1>
+            <h1 className="text-3xl lg:text-5xl lg:mb-10">
+              Project Management
+            </h1>
             <hr className="horizontalLineTeam"></hr>
             <p className="text-md lg:text-lg lg:mt-10">
               We specialize in managing complex projects from start to finish,
               ensuring that all aspects of the projects are completed on time,
               within budget and to the highest standards of quality.
             </p>
+
           </div>
+        </div>
+      </div>
+
+      <div className="lg:h-[30rem] flex items-center">
+
+
+        <div className="flex mx-20 items-center w-[100%]">
+          <div className="hidden lg:flex">
+            <Image src={obmoperations} className="rounded" />
+          </div>
+
+
+
+          <div className="lg:mx-20">
+
+            <h1 className="text-3xl lg:text-5xl lg:mb-10">
+              Operations Management
+            </h1>
+
+
+            <hr className="horizontalLineTeam"></hr>
+            <p className="text-md lg:text-lg lg:mt-10">
+              Our operations management service is designed to help businesses
+              optimize their operations and achieve maximum efficiency. We
+              understand the importance of operations management and we work
+              closely with you to identify areas for improvement, develop
+              strategies to enhance productivity, and streamline your operations
+              to achieve better outcomes.
+            </p>
+          </div>
+
         </div>
       </div>
 
