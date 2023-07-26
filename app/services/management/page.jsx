@@ -23,8 +23,9 @@ const BusinessManagement = () => {
           <h1 className="text-3xl md:text-5xl text-white mb-5 lg:w-[30rem] font-bold md:font-extrabold">
             Business Planning
           </h1>
+          <hr className="horizontalLineWebDev"></hr>
 
-          <h1 className="text-white text-lg lg:text-4xl lg:w-[50rem] md:text-4xl lg:mr-[30rem] mt-5">
+          <h1 className="text-white text-xl lg:text-4xl lg:w-[50rem] md:text-4xl lg:mr-[30rem] mt-5">
             We create simple, effective business plans that help your company
             grow and succeed.
           </h1>
@@ -48,46 +49,80 @@ const BusinessManagement = () => {
         </div>
       </div>
 
-      <div className="lg:h-[30rem] bg-[#f2f2ef5e] flex items-center">
+      {/* PROJECT MANAGEMENT */}
+      <div className="lg:h-[30rem] bg-[#f2f2ef5e] flex items-center py-10 lg:p-0">
         <div className="flex mx-20 items-center">
           <div className="hidden lg:flex w-[35rem]">
             <Image src={obmproject} className="rounded" />
           </div>
 
-          <div className="lg:mx-20">
-            <h1 className="text-3xl lg:text-5xl lg:mb-10">
+          <div className="lg:mx-20 mb-10 lg:mb-0">
+            <div className="flex justify-center mb-3">
+              <hr className="horizontalLineCard"></hr>
+            </div>
+            <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
               Project Management
             </h1>
-            <hr className="horizontalLineTeam"></hr>
-            <p className="text-md lg:text-lg lg:mt-10">
+            <hr className="horizontalLineTeam hidden lg:block"></hr>
+
+            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
               We specialize in managing complex projects from start to finish,
               ensuring that all aspects of the projects are completed on time,
               within budget and to the highest standards of quality.
             </p>
-
           </div>
         </div>
       </div>
 
-      <div className="lg:h-[30rem] flex items-center">
+      {/* TEAM MANAGEMENT */}
 
+      <div className="lg:h-[30rem] flex items-center py-10 lg:p-0">
+        <div className="flex mx-20 items-center">
+          <div className="lg:mx-20">
+            <div className="flex justify-center mb-3">
+              <hr className="horizontalLineCard"></hr>
+            </div>
 
+            <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
+              Team Management
+            </h1>
+
+            <hr className="horizontalLineTeam  hidden lg:block"></hr>
+
+            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
+              We specialize in helping businesses optimize their team’s
+              performance and achieve their goals. We have a vast knowledge of
+              different leadership styles and personalities that helps us
+              understand your team's strengths and weaknesses. Through that
+              understanding, we can help identify areas for improvement and
+              develop strategies to enhance team productivity and collaboration.
+            </p>
+          </div>
+        </div>
+
+        <div className="hidden lg:flex mr-20">
+          <Image src={obmteam} className="rounded" />
+        </div>
+      </div>
+
+      {/* OPERATIONS MANAGEMENT */}
+      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e] py-10 lg:p-0">
         <div className="flex mx-20 items-center w-[100%]">
           <div className="hidden lg:flex">
             <Image src={obmoperations} className="rounded" />
           </div>
 
-
-
           <div className="lg:mx-20">
-
-            <h1 className="text-3xl lg:text-5xl lg:mb-10">
+            <div className="flex justify-center mb-3">
+              <hr className="horizontalLineCard"></hr>
+            </div>
+            <h1 className="text-3xl lg:text-5xl text-center lg:text-start lg:mb-10 mb-5">
               Operations Management
             </h1>
 
+            <hr className="horizontalLineTeam hidden lg:block"></hr>
 
-            <hr className="horizontalLineTeam"></hr>
-            <p className="text-md lg:text-lg lg:mt-10">
+            <p className="text-sm lg:text-lg lg:mt-10 text-center lg:text-start">
               Our operations management service is designed to help businesses
               optimize their operations and achieve maximum efficiency. We
               understand the importance of operations management and we work
@@ -96,86 +131,8 @@ const BusinessManagement = () => {
               to achieve better outcomes.
             </p>
           </div>
-
         </div>
       </div>
-
-      {/* OBM SERVICES */}
-      {/* <div className="">
-        {/* PROJECT MANAGEMENT DIV */}
-      {/* <div className="lg:h-[30rem] bg-[#f2f2ef5e] lg:flex lg:items-center">
-          <div className="flex mx-20">
-            <div className=" hidden lg:flex lg:w-[80%]">
-              <Image className="rounded lg:w-[40rem]" src={obmproject} />
-            </div>
-
-            <div className="flex flex-col justify-center mx-20">
-              <h1 className="text-3xl lg:text-5xl mb-10">Project Management</h1>
-              <div>
-                <hr className="horizontalLineTeam"></hr>
-              </div>
-              <p className="text-md lg:text-lg lg:mt-10">
-                We specialize in managing complex projects from start to finish,
-                ensuring that all aspects of the projects are completed on time,
-                within budget and to the highest standards of quality.
-              </p>
-            </div>
-          </div>
-        </div> */}
-
-      {/* TEAM MANAGEMENT DIV */}
-
-      {/* <div className="lg:h-[30rem] lg:flex lg:items-center">
-          <div className="flex">
-            <div className="flex flex-col justify-center mx-20">
-              <h1 className="text-3xl lg:text-5xl mb-10">Team Management</h1>
-
-              <div>
-                <hr className="horizontalLineTeam"></hr>
-              </div>
-              <p className="text-md lg:text-lg lg:mt-10">
-                We specialize in helping businesses optimize their team’s
-                performance and achieve their goals. We have a vast knowledge of
-                different leadership styles and personalities that helps us
-                understand your team's strengths and weaknesses. Through that
-                understanding, we can help identify areas for improvement and
-                develop strategies to enhance team productivity and
-                collaboration.
-              </p>
-            </div>
-
-            <div className="hidden lg:flex mr-20 lg:w-[80%]">
-              <Image className="rounded lg:w-[40rem] " src={obmproject} />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* OPERATIONS MANAGEMENT DIV */}
-      {/* <div className="lg:h-[30rem] bg-[#f2f2ef5e] lg:flex lg:items-center">
-        <div className="flex mx-20">
-          <div className=" hidden lg:flex ">
-            <Image className="rounded lg:w-[40rem]" src={obmoperations} />
-          </div>
-
-          <div className="flex flex-col justify-center mx-20">
-            <h1 className="text-3xl lg:text-5xl mb-10">
-              Operations Management
-            </h1>
-            <div>
-              <hr className="horizontalLineTeam"></hr>
-            </div>
-            <p className="text-md lg:text-lg lg:mt-10]">
-              Our operations management service is designed to help businesses
-              optimize their operations and achieve maximum efficiency. We
-              understand the importance of operations management and we work
-              closely with you to identify areas for improvement, develop
-              strategies to enhance productivity, and streamline your operations
-              to achieve better outcomes.
-            </p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

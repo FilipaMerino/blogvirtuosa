@@ -26,7 +26,7 @@ const WebDev = () => {
 
           <hr className="horizontalLineWebDev"></hr>
 
-          <h1 className="text-white text-lg md:text-4xl lg:w-[40rem] lg:mr-[30rem] mt-5">
+          <h1 className="text-white text-xl md:text-4xl lg:w-[40rem] lg:mr-[30rem] mt-5">
             We design awesome websites that bring growth to your businesses.
           </h1>
         </div>
