@@ -127,3 +127,17 @@ body {
   background-color: #333333;
 
 }
+
+
+
+/* SERVICES - WEBDEV */
+
+.horizontalLineWebDev {
+  width: 400px;
+  height:2px;
+  border: 2px solid #fb653e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #fb653e;
+}
