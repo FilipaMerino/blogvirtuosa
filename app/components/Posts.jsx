@@ -48,6 +48,7 @@ const Posts = () => {
               </Link>
             </figure>
             <div className="">
+         
               <p className="text-sm mb-5 text-justify">{post.content.substring(0, 180) + "..."}</p>
 
               <div className="flex justify-between">

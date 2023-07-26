@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const Management = () => {
   return (
-    <div>page</div>
+    <div>Management</div>
   )
 }
 
-export default page
+export default Management;

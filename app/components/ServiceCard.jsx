@@ -5,25 +5,22 @@ import Link from "next/link";
 
 const ServiceCard = ({ title, content, href }) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl mb-5 lg:mb-1 lg:min-h-[19rem] mr-5">
-      <div className="card-body">
-        <h2 className="card-title">{title}</h2>
-
-        <hr className="horizontalLineCard mt-5"></hr>
-        <p>{content}</p>
-        <div className="card-actions justify-start lg:mt-2 text-sm flex items-center hover:underline">
-          <Link href={href} className="">
-            Learn More
-          </Link>
-          <a href={href}>
+    <Link href={href}>
+      <div className="card w-96 bg-base-100 shadow-xl mb-5 lg:mb-1 lg:min-h-[19rem] mr-5 transform transition-transform hover:scale-105 cursor-pointer">
+        <div className="card-body">
+          <h2 className="card-title">{title}</h2>
+          <hr className="horizontalLineCard mt-5"></hr>
+          <p>{content}</p>
+          <div className="card-actions justify-start lg:mt-2 text-sm flex items-center hover:underline">
+            <span>Learn More</span>
             <FontAwesomeIcon
               icon={faArrowRight}
-              className="flex ml-2 text-sm  md:w-2"
+              className="text-sm md:w-2 ml-2"
             />
-          </a>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

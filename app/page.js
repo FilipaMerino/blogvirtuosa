@@ -63,7 +63,7 @@ const HomePage = () => {
 
           <div className=" flex flex-col items-center md:flex lg:flex-row lg:justify-between">
             <ServiceCard
-              href="./services/businessmanagement"
+              href="./services/management"
               title="Business Management"
               content="The process of organizing, planning, analyzing and implementing solutions for businesses to help achieve their goals."
             />
