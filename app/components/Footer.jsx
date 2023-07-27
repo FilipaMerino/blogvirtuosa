@@ -64,18 +64,18 @@ const Footer = () => {
 
       <div className="flex mr-20">
         <Link
-          href="./about"
+          href="/about"
           className="text-sm text-[#ffffff]  hover:underline">
           Our Story
         </Link>
 
         <Link
-          href="./about/mission"
+          href="/#service"
           className="text-sm text-[#ffffff]  hover:underline ml-2">
           Services
         </Link>
         <Link
-          href="./blog"
+          href="/blog"
           className="text-sm text-[#ffffff]  hover:underline ml-2">
           Blog
         </Link>
