@@ -209,10 +209,7 @@ const AboutPage = () => {
 
           <div className=" text-center lg:text-start mx-5 p-5 flex flex-col items-center lg:items-start lg:mx-0 lg:p-0">
             <p className="">
-              Lorem ipsum is placeholder text commonly used in the graphic,
-              print, and publishing industries for previewing layouts and visual
-              mockups.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We're a group of dedicated professionals, each with unique skills and experiences. Together, we work to deliver top-notch services that make a real difference. Our shared passion for helping businesses grow is what unites us. We're here to support you and your vision.
             </p>
           </div>
           <div className="my-10 flex justify-center lg:justify-start">
