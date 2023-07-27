@@ -34,16 +34,20 @@ const VirtualAssistant = () => {
       </div>
 
       {/* EMAIL MANAGEMENT */}
-      <div className="lg:h-[30rem] flex items-center ">
-        <div className="items-center p-10 mx-20 lg:flex justify-center lg:p-0">
+      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e]">
+        <div className="items-center mx-20 lg:flex justify-center lg:p-0 py-10">
           <div className="w-[50%] h-auto hidden lg:block">
             <Image src={email} className="rounded" />
           </div>
 
           <div className="lg:ml-20 lg:w-[2/3]">
-            <h1 className="text-3xl lg:text-5xl mb-5  text-center lg:text-start">Email Management</h1>
+            <h1 className="text-3xl lg:text-5xl mb-5  text-center lg:text-start">
+              Email Management
+            </h1>
             <hr className="horizontalLineTeam hidden lg:block"></hr>
-
+            <div className="flex justify-center lg:hidden">
+              <hr className="horizontalLineCard"></hr>
+            </div>
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start lg:mr-10">
               This service is designed to help businesses efficiently manage
               their email communications. We work with you to develop customized
@@ -55,14 +59,16 @@ const VirtualAssistant = () => {
       </div>
 
       {/* CLIENT CARE MANAGEMENT */}
-      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e]">
-        <div className="items-center mx-20 lg:flex lg:p-0 p-10">
+      <div className="lg:h-[30rem] flex items-center ">
+        <div className="items-center mx-20 lg:flex lg:p-0 py-10">
           <div className="lg:mr-20 lg:w-[2/3]">
             <h1 className="text-3xl lg:text-5xl mb-5 lg:text-start text-center">
               Client Care Management
             </h1>
             <hr className="horizontalLineTeam hidden lg:block"></hr>
-
+            <div className="flex justify-center lg:hidden">
+              <hr className="horizontalLineCard"></hr>
+            </div>
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
               Our client care management is designed to help businesses build
               and maintain strong relationships with their clients. We believe
@@ -81,16 +87,20 @@ const VirtualAssistant = () => {
       </div>
 
       {/* CALENDAR MANAGEMENT */}
-      <div className="lg:h-[30rem] flex items-center">
-        <div className="items-center lg:w-[1/3] mx-20 lg:flex">
+      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e]">
+        <div className="items-center lg:w-[1/3] mx-20 lg:flex lg:p-0 py-10">
           <div className="w-[70%] h-auto hidden lg:block">
             <Image src={planner} className="rounded" />
           </div>
 
-          <div className="ml-20 lg:w-[2/3]">
-            <h1 className="text-3xl lg:text-5xl mb-5">Calendar Management</h1>
+          <div className="lg:ml-20 lg:w-[2/3]">
+            <h1 className="text-3xl lg:text-5xl mb-5 lg:text-start text-center">
+              Calendar Management
+            </h1>
             <hr className="horizontalLineTeam hidden lg:block"></hr>
-
+            <div className="flex justify-center lg:hidden">
+              <hr className="horizontalLineCard"></hr>
+            </div>
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
               This service is designed to help businesses manage their schedules
               and appointments efficiently. We work with you to develop
@@ -102,11 +112,17 @@ const VirtualAssistant = () => {
       </div>
 
       {/* EVENT COORDINATOR */}
-      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e]">
-        <div className="items-center mx-20 lg:flex">
-          <div className="mr-20 lg:w-[2/3]">
-            <h1 className="text-3xl lg:text-5xl mb-5">Event Coordinator</h1>
+      <div className="lg:h-[30rem] flex items-center">
+        <div className="items-center mx-20 lg:flex lg:p-0 py-10">
+          <div className="lg:mr-20 lg:w-[2/3]">
+            <h1 className="text-3xl lg:text-5xl mb-5 lg:text-start text-center">
+              Event Coordinator
+            </h1>
             <hr className="horizontalLineTeam hidden lg:block"></hr>
+
+            <div className="flex justify-center lg:hidden">
+              <hr className="horizontalLineCard"></hr>
+            </div>
 
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
               This service is designed to help bring your event vision to life.
@@ -124,16 +140,20 @@ const VirtualAssistant = () => {
 
       {/* SOCIAL MEDIA */}
 
-      <div className="lg:h-[30rem] flex items-center">
-        <div className="items-center mx-20 lg:flex">
+      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e]">
+        <div className="items-center mx-20 lg:flex lg:p-0 py-10">
           <div className="w-[50%] h-auto hidden lg:block">
             <Image src={socialmedia} className="rounded" />
           </div>
 
-          <div className="ml-20 lg:w-[2/3]">
-            <h1 className="text-3xl lg:text-5xl mb-5">Content Creation</h1>
+          <div className="lg:ml-20 lg:w-[2/3]">
+            <h1 className="text-3xl lg:text-5xl mb-5 lg:text-start text-center">
+              Content Creation
+            </h1>
             <hr className="horizontalLineTeam hidden lg:block"></hr>
-
+            <div className="flex justify-center lg:hidden">
+              <hr className="horizontalLineCard"></hr>
+            </div>
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start mr-10">
               This service is designed to help businesses create high-quality
               engaging content that resonates with their audience. We work with
