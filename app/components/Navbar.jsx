@@ -28,14 +28,14 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32">
                 <li>
-                  <Link href="./about">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
 
                 <li>
-                  <Link href="./#service">Services</Link>
+                  <Link href="/#service">Services</Link>
                 </li>
                 <li>
-                <Link href="./blog">Blog</Link>
+                <Link href="/blog">Blog</Link>
                 </li>
                 <li>
                   {isUserLoggedIn ? (
@@ -53,7 +53,7 @@ const Navbar = () => {
 
             <Link
               className="btn btn-ghost normal-case lg:text-lg text-md text-white"
-              href="./">
+              href="/">
               ADMIN VIRTUOSA
             </Link>
           </div>
