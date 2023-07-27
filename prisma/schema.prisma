@@ -19,3 +19,12 @@ model Post{
   img String
   createdAt DateTime @default(now())
 }
+
+
+model Testimonial {
+  id String @id @default(uuid())
+  avatar String
+  name String
+  companyName String
+  testimonialText String
+}
