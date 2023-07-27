@@ -33,28 +33,30 @@ const VirtualAssistant = () => {
         </div>
       </div>
 
+      {/* EMAIL MANAGEMENT */}
       <div className="lg:h-[30rem] flex items-center">
-        <div className="items-center lg:w-[1/3] mx-20 hidden lg:flex">
-          <div className="w-[70%] h-auto">
-            <Image src={planner} className="rounded" />
+        <div className="items-center mx-20 lg:flex">
+          <div className="w-[50%] h-auto hidden lg:block">
+            <Image src={email} className="rounded" />
           </div>
 
           <div className="ml-20 lg:w-[2/3]">
-            <h1 className="text-3xl lg:text-5xl mb-5">Calendar Management</h1>
+            <h1 className="text-3xl lg:text-5xl mb-5">Email Management</h1>
             <hr className="horizontalLineTeam hidden lg:block"></hr>
 
-            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
-              This service is designed to help businesses manage their schedules
-              and appointments efficiently. We work with you to develop
-              customized calendar management strategies that meet your specific
-              business needs and help you achieve your scheduling goals.
+            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start mr-10">
+              This service is designed to help businesses efficiently manage
+              their email communications. We work with you to develop customized
+              email management strategies that meet your specific business
+              needs.
             </p>
           </div>
         </div>
       </div>
 
+      {/* CLIENT CARE MANAGEMENT */}
       <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e]">
-        <div className="items-center mx-20 hidden lg:flex">
+        <div className="items-center mx-20 lg:flex">
           <div className="mr-20 lg:w-[2/3]">
             <h1 className="text-3xl lg:text-5xl mb-5">
               Client Care Management
@@ -72,19 +74,16 @@ const VirtualAssistant = () => {
             </p>
           </div>
 
-          <div className="w-full h-auto">
-            <Image src={client} className="rounded" />
+          <div className="w-full h-auto hidden lg:block">
+            <Image src={client} className="rounded " />
           </div>
         </div>
       </div>
 
-
-
-
-
+      {/* CALENDAR MANAGEMENT */}
       <div className="lg:h-[30rem] flex items-center">
-        <div className="items-center lg:w-[1/3] mx-20 hidden lg:flex">
-          <div className="w-[70%] h-auto">
+        <div className="items-center lg:w-[1/3] mx-20 lg:flex">
+          <div className="w-[70%] h-auto hidden lg:block">
             <Image src={planner} className="rounded" />
           </div>
 
@@ -102,12 +101,48 @@ const VirtualAssistant = () => {
         </div>
       </div>
 
+      {/* EVENT COORDINATOR */}
+      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e]">
+        <div className="items-center mx-20 lg:flex">
+          <div className="mr-20 lg:w-[2/3]">
+            <h1 className="text-3xl lg:text-5xl mb-5">Event Coordinator</h1>
+            <hr className="horizontalLineTeam hidden lg:block"></hr>
 
+            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
+              This service is designed to help bring your event vision to life.
+              We work with you to understand your event goals and objectives,
+              develop a detailed event plan and manage every aspect of your
+              event to ensure its success.
+            </p>
+          </div>
 
+          <div className="w-[60%] h-auto hidden lg:block">
+            <Image src={event} className="rounded " />
+          </div>
+        </div>
+      </div>
 
+      {/* SOCIAL MEDIA */}
 
+      <div className="lg:h-[30rem] flex items-center">
+        <div className="items-center mx-20 lg:flex">
+          <div className="w-[50%] h-auto hidden lg:block">
+            <Image src={socialmedia} className="rounded" />
+          </div>
 
+          <div className="ml-20 lg:w-[2/3]">
+            <h1 className="text-3xl lg:text-5xl mb-5">Content Creation</h1>
+            <hr className="horizontalLineTeam hidden lg:block"></hr>
 
+            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start mr-10">
+              This service is designed to help businesses create high-quality
+              engaging content that resonates with their audience. We work with
+              you to develop customized content strategies that meet your
+              specific business needs.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
