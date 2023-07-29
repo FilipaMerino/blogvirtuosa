@@ -12,7 +12,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
-  const { user } = useAuthContext();
+  // const { user } = useAuthContext();
 
   const fetchPosts = async () => {
     const res = await fetch("/api/posts");
@@ -38,8 +38,8 @@ const Posts = () => {
 
   return (
     <div className="flex flex-col items-center p-10">
-      {user && <AddPost refreshPosts={fetchPosts} />}
-      {/* <AddPost refreshPosts={fetchPosts} /> */}
+      {/* {user && <AddPost refreshPosts={fetchPosts} />} */}
+      <AddPost refreshPosts={fetchPosts} />
 
       {posts.map((post) => (
         <div className="mb-10">
