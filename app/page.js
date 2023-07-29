@@ -126,7 +126,7 @@ const HomePage = () => {
 
       <div className="flex flex-col mx-5 lg:flex-row p-10 lg:mx-20 items-center md:justify-around">
         <div className="lg:w-[60%] mr-20 lg:mr-10">
-          <Link href="./blog">
+          <Link href="/blog">
             <h1 className="text-3xl mb-5 lg:text-5xl hover:text-[#fb653e]">
               Our Blog
             </h1>
