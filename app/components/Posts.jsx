@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BsTrash3Fill } from "react-icons/bs";
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { useAuthContext } from "../../context/AuthContext";
+// import { useAuthContext } from "../../context/AuthContext";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -76,13 +76,13 @@ const Posts = () => {
                   </a>
                 </div>
 
-                {user && (
+                {/* {user && ( */}
                   <div className="flex justify-end">
                     <button onClick={() => deletePost(post.id)}>
                       <BsTrash3Fill className="hover:text-[#fb653e]" />
                     </button>
                   </div>
-                )}
+                {/* )} */}
               </div>
               <hr className="horizontalLineBlog w-full mt-5"></hr>
             </div>
