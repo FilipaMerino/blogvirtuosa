@@ -10,7 +10,7 @@ import blogBackSquare from "./components/images/blogBackSquare.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import Posts from "./components/Posts";
+
 
 const HomePage = () => {
   return (
@@ -37,10 +37,11 @@ const HomePage = () => {
           </p>
         </div>
         <div className="flex mx-5 p-5 md:mt-5 md:mx-5 w-[20rem] justify-start">
-          <Link href="/about/team" className="btn  border-none drop-shadow-md lg:w-64 hover:bg-[#333333] hover:text-white ">
+          <Link
+            href="/about/team"
+            className="btn  border-none drop-shadow-md lg:w-64 hover:bg-[#333333] hover:text-white ">
             About us
           </Link>
-
         </div>
       </div>
 
@@ -166,6 +167,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
 
       {/* NEWSLETTER */}
       <Newsletter />
