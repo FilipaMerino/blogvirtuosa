@@ -8,11 +8,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BsTrash3Fill } from "react-icons/bs";
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-// import { useAuthContext } from "../../context/AuthContext";
+
+import firebase from "firebase/app";
+
+
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
-  // const { user } = useAuthContext();
+
 
   const fetchPosts = async () => {
     const res = await fetch("/api/posts");
@@ -26,7 +29,16 @@ const Posts = () => {
 
   useEffect(() => {
     fetchPosts();
+
+
+
   }, []);
+
+
+
+
+
+
 
   const deletePost = async (id) => {
     const res = await fetch(`/api/posts/${id}`, {
@@ -38,9 +50,7 @@ const Posts = () => {
 
   return (
     <div className="flex flex-col items-center p-10">
-      {/* {user && <AddPost refreshPosts={fetchPosts} />} */}
       <AddPost refreshPosts={fetchPosts} />
-
       {posts.map((post) => (
         <div className="mb-10">
           <div className=" flex flex-col items-center w-[30rem] lg:w-[40rem] lg:mb-10">
