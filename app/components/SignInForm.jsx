@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
@@ -11,6 +11,8 @@ import FormInput from "../components/FormInput";
 
 import { FcGoogle } from "react-icons/fc";
 
+import { UserContext } from "../contexts/UserContext";
+
 const defaultFormFields = {
   email: "",
   password: "",
@@ -20,7 +22,9 @@ const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
-  console.log(formFields);
+  const {setCurrentUser} = useContext(UserContext);
+
+
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -30,11 +34,12 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
-      const response = await signInAuthUSerWithEmailAndPassword(
+      const { user } = await signInAuthUSerWithEmailAndPassword(
         email,
         password
       );
-      console.log(response);
+      setCurrentUser(user);
+
       resetFormFields();
     } catch (error) {
       switch (error.code) {

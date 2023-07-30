@@ -1,16 +1,20 @@
-"use client";
+'use client';
 
 import React from "react";
 import Link from "next/link";
-import { signIn, signOut, useSession, getProviders } from "next-auth/react";
-import { useState, useEffect } from "react";
+import { useContext } from "react";
 import { FiLogOut } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { UserContext } from "../contexts/UserContext";
+import { auth } from "../../utils/firebase/firebase.utils";
+
 
 const Navbar = () => {
-  const isUserLoggedIn = true;
 
-  const [providers, setProviders] = useState(null);
+
+
+  const { currentUser } = useContext(UserContext);
+  console.log(currentUser);
 
   return (
     <div>
@@ -38,15 +42,13 @@ const Navbar = () => {
                 <Link href="/blog">Blog</Link>
                 </li>
                 <li>
-                  {isUserLoggedIn ? (
-                    <button type="button" onClick={signOut}>
+
+                    <button type="button">
                       <Link href="./">
                         <strong>Log Out</strong>
                       </Link>
                     </button>
-                  ) : (
-                    <></>
-                  )}
+
                 </li>
               </ul>
             </div>
@@ -71,15 +73,13 @@ const Navbar = () => {
                 <Link href="/blog">Blog</Link>
               </li>
               <li>
-                {isUserLoggedIn ? (
-                  <button type="button" onClick={signOut}>
+
+                  <button type="button">
                     <Link href="/">
                       <FiLogOut />
                     </Link>
                   </button>
-                ) : (
-                  <></>
-                )}
+
               </li>
             </ul>
           </div>
