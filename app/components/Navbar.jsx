@@ -1,20 +1,22 @@
-'use client';
+'use client'
 
-import React from "react";
 import Link from "next/link";
-import { useContext } from "react";
 import { FiLogOut } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useContext, useEffect } from "react";
 import { UserContext } from "../contexts/UserContext";
-import { auth } from "../../utils/firebase/firebase.utils";
 
 
 const Navbar = () => {
 
-
-
   const { currentUser } = useContext(UserContext);
   console.log(currentUser);
+
+
+  useEffect(() => {
+    console.log("currentUser in Navbar:", currentUser);
+  }, [currentUser]);
+
 
   return (
     <div>
