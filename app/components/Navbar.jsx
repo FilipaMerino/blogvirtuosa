@@ -3,20 +3,19 @@
 import Link from "next/link";
 import { FiLogOut } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
-
+import { signOutUser } from "../../utils/firebase/firebase.utils"
 
 const Navbar = () => {
-
-  const { currentUser } = useContext(UserContext);
-  console.log(currentUser);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
 
 
-  useEffect(() => {
-    console.log("currentUser in Navbar:", currentUser);
-  }, [currentUser]);
+  const signOutHandler = async () => {
+    await signOutUser();
+    setCurrentUser(null);
 
+  }
 
   return (
     <div>
@@ -41,16 +40,14 @@ const Navbar = () => {
                   <Link href="/#service">Services</Link>
                 </li>
                 <li>
-                <Link href="/blog">Blog</Link>
+                  <Link href="/blog">Blog</Link>
                 </li>
                 <li>
-
-                    <button type="button">
-                      <Link href="./">
-                        <strong>Log Out</strong>
-                      </Link>
-                    </button>
-
+                  <button type="button">
+                    <Link href="./">
+                      <strong>Log Out</strong>
+                    </Link>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -75,13 +72,18 @@ const Navbar = () => {
                 <Link href="/blog">Blog</Link>
               </li>
               <li>
-
-                  <button type="button">
+                {currentUser && (
+                  <button type="button" onClick={signOutHandler}>
                     <Link href="/">
                       <FiLogOut />
                     </Link>
                   </button>
-
+                )}
+                {/* <button type="button">
+                    <Link href="/">
+                      <FiLogOut />
+                    </Link>
+                  </button> */}
               </li>
             </ul>
           </div>

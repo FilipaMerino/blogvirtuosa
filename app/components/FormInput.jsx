@@ -1,3 +1,5 @@
+'use client'
+
 
 const FormInput = ({ label, ...otherProps }) => {
   return (

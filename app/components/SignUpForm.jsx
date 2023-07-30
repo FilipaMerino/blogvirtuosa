@@ -1,12 +1,18 @@
-"use client";
+'use client'
 
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
-  signInWithGooglePopup,
+
 } from "../../utils/firebase/firebase.utils";
+
+
+
 import FormInput from "../components/FormInput";
+import { UserContext } from "../contexts/UserContext";
+
+
 
 const defaultFormFields = {
   displayName: "",
@@ -19,7 +25,10 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  console.log(formFields);
+
+  const { setCurrentUser } = useContext(UserContext);
+
+
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -34,13 +43,18 @@ const SignUpForm = () => {
     }
 
     try {
-      const { user } = await createAuthUserWithEmailAndPassword(
+      const userCredential = await signInAuthUSerWithEmailAndPassword(
         email,
         password
       );
+      const user = userCredential?.user;
+      setCurrentUser(user);
 
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
+
+
+
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Email already exists");
