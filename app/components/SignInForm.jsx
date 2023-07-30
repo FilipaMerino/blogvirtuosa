@@ -97,6 +97,7 @@ const SignInForm = () => {
               Sign In
             </button>
             <button
+              type="button"
               onClick={signInWithGoogle}
               className="btn bg-[#4285F4] text-white">
               Sign In With
