@@ -13,6 +13,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
 const HomePage = () => {
+
+
   return (
     <div>
       <Banner />
