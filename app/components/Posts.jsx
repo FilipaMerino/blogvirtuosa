@@ -1,21 +1,23 @@
-"use client";
+'use client'
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import AddPost from "./AddPost";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { UserContext } from "../contexts/UserContext";
+
+
 
 import { BsTrash3Fill } from "react-icons/bs";
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import firebase from "firebase/app";
-
-
 
 const Posts = () => {
-  const [posts, setPosts] = useState([]);
 
+  const { currentUser } = useContext(UserContext);
+
+  const [posts, setPosts] = useState([]);
 
   const fetchPosts = async () => {
     const res = await fetch("/api/posts");
@@ -29,16 +31,7 @@ const Posts = () => {
 
   useEffect(() => {
     fetchPosts();
-
-
-
   }, []);
-
-
-
-
-
-
 
   const deletePost = async (id) => {
     const res = await fetch(`/api/posts/${id}`, {
@@ -50,7 +43,13 @@ const Posts = () => {
 
   return (
     <div className="flex flex-col items-center p-10">
+
+
+
+
+
       <AddPost refreshPosts={fetchPosts} />
+
       {posts.map((post) => (
         <div className="mb-10">
           <div className=" flex flex-col items-center w-[30rem] lg:w-[40rem] lg:mb-10">
@@ -86,13 +85,16 @@ const Posts = () => {
                   </a>
                 </div>
 
-                {/* {user && ( */}
-                  <div className="flex justify-end">
-                    <button onClick={() => deletePost(post.id)}>
-                      <BsTrash3Fill className="hover:text-[#fb653e]" />
-                    </button>
-                  </div>
-                {/* )} */}
+
+                <div className="flex justify-end">
+
+                {currentUser && (
+              <button onClick={() => deletePost(post.id)}>
+                <BsTrash3Fill className="hover:text-[#fb653e]" />
+              </button>
+            )}
+                </div>
+
               </div>
               <hr className="horizontalLineBlog w-full mt-5"></hr>
             </div>

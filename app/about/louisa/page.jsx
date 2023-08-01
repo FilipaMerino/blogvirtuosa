@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import louisa from "../../components/images/Louisa.jpeg";
-import louisa2 from "../../components/images/Louisa2.jpeg";
-import louisa3 from "../../components/images/Louisa3.jpeg";
+import LouisaPic from "../../components/images/LouisaPic.jpeg";
+import LouisaPic2 from "../../components/images/LouisaPic2.jpeg";
+import LouisaPic3 from "../../components/images/LouisaPic3.jpeg";
 import quotes1 from "../../components/images/quotes1.svg";
 import quotes2 from "../../components/images/quotes2.svg";
 

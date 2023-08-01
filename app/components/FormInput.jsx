@@ -1,12 +1,10 @@
-'use client'
 
 
 const FormInput = ({ label, ...otherProps }) => {
   return (
     <div className="flex flex-col">
-    <div>
-      <label>{label}</label>
-    </div>
+
+        <label>{label}</label>
       <input {...otherProps}></input>
     </div>
   );

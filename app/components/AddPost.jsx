@@ -1,10 +1,14 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { UserContext } from "../contexts/UserContext";
+
 import { uuid } from "uuidv4";
 import axios from "axios";
 
 const AddPost = ({ refreshPosts }) => {
+  const { currentUser } = useContext(UserContext);
+
   const [modalOpen, setModalOpen] = useState(false);
   let [newPostTitle, setNewPostTitle] = useState("");
   let [newPostContent, setNewPostContent] = useState("");
@@ -64,10 +68,12 @@ const AddPost = ({ refreshPosts }) => {
 
   return (
     <div>
-      {/* You can open the modal using ID.showModal() method */}
-      <button className="btn mb-5" onClick={() => setModalOpen(true)}>
-        Add New Post
-      </button>
+      {currentUser && (
+        <button className="btn mb-5" onClick={() => setModalOpen(true)}>
+          Add New Post
+        </button>
+      )}
+
       <dialog
         id="my_modal_3"
         className={`modal ${modalOpen ? "modal-open" : ""}`}>
@@ -81,11 +87,6 @@ const AddPost = ({ refreshPosts }) => {
             ✕
           </button>
 
-
-
-
-
-
           <h3 className="font-bold text-2xl mb-10 text-center">Add New Post</h3>
 
           <div className="flex flex-col">
@@ -94,9 +95,8 @@ const AddPost = ({ refreshPosts }) => {
               placeholder="Enter New Post Title"
               className="input input-bordered mb-5 text-lg"
               value={newPostTitle}
-
               onChange={(e) => {
-                setNewPostTitle(e.target.value)
+                setNewPostTitle(e.target.value);
               }}
             />
 
@@ -110,11 +110,11 @@ const AddPost = ({ refreshPosts }) => {
 
             <input
               type="file"
-
               className="file-input file-input-bordered  mb-5"
               ref={fileInputRef}
               onChange={handleImageChange}
             />
+
             <button className="btn btn-primary ">Add Post</button>
           </div>
         </form>

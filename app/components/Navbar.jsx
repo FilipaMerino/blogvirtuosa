@@ -79,11 +79,7 @@ const Navbar = () => {
                     </Link>
                   </button>
                 )}
-                {/* <button type="button">
-                    <Link href="/">
-                      <FiLogOut />
-                    </Link>
-                  </button> */}
+               
               </li>
             </ul>
           </div>

@@ -39,7 +39,7 @@ const HomePage = () => {
         <div className="flex mx-5 p-5 md:mt-5 md:mx-5 w-[20rem] justify-start">
           <Link
             href="/about/team"
-            className="btn  border-none drop-shadow-md lg:w-64 hover:bg-[#333333] hover:text-white ">
+            className="btn  border-none drop-shadow-md lg:w-64 bg-[#333333] text-white ">
             About us
           </Link>
         </div>
@@ -93,14 +93,14 @@ const HomePage = () => {
         </div>
 
         <div className="flex justify-center mt-1">
-          <h1 className="text-3xl md:text-5xl italic">
+          <h1 className="text-3xl md:text-5xl">
             You deserve to have a life and
           </h1>
         </div>
 
         <div className="flex justify-center">
-          <h1 className="text-3xl md:text-5xl italic">business that</h1>
-          <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
+          <h1 className="text-3xl md:text-5xl">business that</h1>
+          <h1 className="text-3xl md:text-5xl text-[#fb653e] ml-2">
             doesn't
           </h1>
           <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">

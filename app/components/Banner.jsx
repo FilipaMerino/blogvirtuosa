@@ -1,6 +1,5 @@
 import Image from "next/image";
 import bannerPic from "./images/bannerPic.png";
-import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -25,11 +24,11 @@ const Banner = () => {
         <h3 className="text-white text-lg md:text-3xl mb-5 mt-2">
           Simplify. Organize. Succeed.
         </h3>
-        <Link
-          href="#"
+        <a
+          href="https://hello.dubsado.com/public/form/view/62435fd047bf3990e0a4af23"
           className="btn w-64 hover:bg-[#ffffff]    bg-[#333333] hover:text-[#333333] text-white border-none">
           Book A Free Consultation
-        </Link>
+        </a>
       </div>
     </div>
   );

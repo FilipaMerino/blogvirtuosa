@@ -1,4 +1,4 @@
-'use client'
+
 
 import { useState, useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
@@ -32,15 +32,12 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
-      console.log(email, password); // Add this line
-
       const userCredential = await signInAuthUSerWithEmailAndPassword(
         email,
         password
       );
       const user = userCredential?.user;
       setCurrentUser(user);
-
       resetFormFields();
     } catch (error) {
       switch (error.code) {
@@ -53,7 +50,7 @@ const SignInForm = () => {
           break;
 
         default:
-          console.log(error);
+          console.log("Error signing in", error.message);
       }
     }
   };
@@ -76,6 +73,8 @@ const SignInForm = () => {
 
       <div className="flex justify-center p-10">
         <form onSubmit={handleSubmit} className="flex flex-col justify-center">
+
+
           <FormInput
             label="Email"
             type="email"
@@ -98,6 +97,9 @@ const SignInForm = () => {
             className="input input-bordered mb-5"
           />
 
+
+
+
           <div className="flex gap-4">
             <button type="submit" className="btn bg-[#333333] text-white">
               Sign In
@@ -105,11 +107,7 @@ const SignInForm = () => {
             <button
               type="button"
               onClick={signInWithGoogle}
-              className="btn bg-[#4285F4] text-white">
-              Sign In With
-              <div className="bg-white rounded-lg p-1">
-                <FcGoogle />
-              </div>
+              className="btn bg-[#4285F4] text-white">Sign In With <FcGoogle />
             </button>
           </div>
         </form>
@@ -117,5 +115,8 @@ const SignInForm = () => {
     </div>
   );
 };
+
+
+
 
 export default SignInForm;
