@@ -1,4 +1,5 @@
 
+import { redirect } from 'next/navigation'
 
 import { useState, useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
@@ -38,7 +39,9 @@ const SignInForm = () => {
       );
       const user = userCredential?.user;
       setCurrentUser(user);
-      resetFormFields();
+      redirect('/')
+
+      // resetFormFields();
     } catch (error) {
       switch (error.code) {
         case "auth/wrong-password":
@@ -71,7 +74,7 @@ const SignInForm = () => {
         <h1>Sign In</h1>
       </div>
 
-      <div className="flex justify-center p-10">
+      <div className="flex justify-center p-10" >
         <form onSubmit={handleSubmit} className="flex flex-col justify-center">
           <FormInput
             label="Email"

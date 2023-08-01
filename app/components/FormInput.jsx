@@ -1,12 +1,9 @@
-
-
 const FormInput = ({ label, ...otherProps }) => {
   return (
-    <div className="flex flex-col" suppressHydrationWarning >
-
-      <label>{label}</label>
-      <input {...otherProps}></input>
-    </div>
+    <>
+      <span>{label}</span>
+      <input {...otherProps} />
+    </>
   );
 };
 

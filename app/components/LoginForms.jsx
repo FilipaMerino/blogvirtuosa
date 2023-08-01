@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { useState } from "react";
 
@@ -12,8 +12,9 @@ const LoginForms = () => {
     setShowSignUp((prevShowSignUp) => !prevShowSignUp);
   };
 
+
   return (
-    <div className="flex flex-col justify-center p-10">
+    <div className="flex flex-col justify-center p-10" >
       {/* {showSignUp ? <SignUpForm /> : } */}
 
       {showSignUp && <SignUpForm />}

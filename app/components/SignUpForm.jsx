@@ -1,3 +1,4 @@
+'use client'
 
 import { useState, useContext } from "react";
 import {
@@ -24,7 +25,9 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
+
   const { setCurrentUser } = useContext(UserContext);
+
 
 
   const resetFormFields = () => {
@@ -72,10 +75,11 @@ const SignUpForm = () => {
         <h1>Sign Up</h1>
       </div>
 
+
+
       <div className="flex justify-center p-10">
         <form onSubmit={handleSubmit} className="flex flex-col justify-center">
-          <div className="flex gap-3">
-            <div>
+
               <FormInput
                 label="Name"
                 type="text"
@@ -97,8 +101,8 @@ const SignUpForm = () => {
                 placeholder="Email"
                 className="input input-bordered mb-5"
               />
-            </div>
-            <div>
+
+
               <FormInput
                 label="Password"
                 type="password"
@@ -120,15 +124,15 @@ const SignUpForm = () => {
                 placeholder="Confirm Password"
                 className="input input-bordered mb-5"
               />
-            </div>
-          </div>
+            
+
 
           <button type="submit" className="btn btn-primary text-white">
             Sign Up
           </button>
         </form>
       </div>
-    </div>
+</div>
   );
 };
 
