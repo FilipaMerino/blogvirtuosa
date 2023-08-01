@@ -59,7 +59,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="navbar-center hidden lg:flex lg:justify-between">
+          <div className="navbar-center hidden lg:flex lg:justify-between lg:items-center">
             <ul className="menu menu-horizontal px-1 text-white">
               <li>
                 <Link href="/about">About</Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
                     </Link>
                   </button>
                 )}
-               
+
               </li>
             </ul>
           </div>

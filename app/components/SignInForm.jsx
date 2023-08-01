@@ -39,7 +39,7 @@ const SignInForm = () => {
       );
       const user = userCredential?.user;
       setCurrentUser(user);
-      redirect('/')
+      redirect('/');
 
       // resetFormFields();
     } catch (error) {
