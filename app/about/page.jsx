@@ -9,7 +9,7 @@ import Link from "next/link";
 import team from "../components/images/team.jpeg";
 import team3 from "../components/images/team3.jpeg";
 import filipa from "../components/images/filipa.jpeg";
-import louisa from "../components/images/louisa.jpeg";
+import LouisaPic from "../components/images/LouisaPic.jpeg";
 
 const AboutPage = () => {
   const values = [
@@ -252,7 +252,7 @@ const AboutPage = () => {
       </div> */}
 
 
-      
+
       {/* {/* THIS IS THE TEAM SESSION */}
 
       <div className="bg-[#f2f2ef5e] flex items-center my-auto">
@@ -288,7 +288,7 @@ const AboutPage = () => {
               <div className="w-32 lg:w-20 rounded">
                 <Link href="./about/louisa">
                   <Image
-                    src={louisa}
+                    src={LouisaPic}
                     className="transform hover:scale-105 transition-transform"
                   />
                   {/* The semi-transparent overlay */}

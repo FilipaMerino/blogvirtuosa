@@ -14,7 +14,7 @@ import experience from "../../components/images/experience.svg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-const images = [louisa, louisa2, louisa3];
+const images = [LouisaPic, LouisaPic2, LouisaPic3];
 // const imagesFilipa =[filipa, filipa1, filipa2];
 
 const Louisa = () => {
