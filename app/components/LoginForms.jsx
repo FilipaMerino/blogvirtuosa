@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 
@@ -14,11 +14,18 @@ const LoginForms = () => {
 
   return (
     <div className="flex flex-col justify-center p-10">
-      {showSignUp ? <SignUpForm /> : <SignInForm />}
+      {/* {showSignUp ? <SignUpForm /> : } */}
+
+      {showSignUp && <SignUpForm />}
+
+      {!showSignUp && <SignInForm />}
+
       <button
         onClick={handleToggleForm}
         className="text-xs text-[#068FFF] hover:underline">
-        {showSignUp ? "I already have an account" : "I don't have an account"}
+        {showSignUp && "I already have an account"}
+
+        {!showSignUp && "I don't have an account"}
       </button>
     </div>
   );

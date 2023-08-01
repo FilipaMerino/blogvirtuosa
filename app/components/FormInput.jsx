@@ -2,7 +2,7 @@
 
 const FormInput = ({ label, ...otherProps }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" suppressHydrationWarning >
 
       <label>{label}</label>
       <input {...otherProps}></input>

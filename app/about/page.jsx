@@ -140,10 +140,10 @@ const AboutPage = () => {
               content={values[currentSlide].content}
             />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
-              <button onClick={handlePrevious} className="btn btn-circle">
+              <button onClick={handlePrevious} className="btn btn-circle bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
                 ❮
               </button>
-              <button onClick={handleNext} className="btn btn-circle">
+              <button onClick={handleNext} className="btn btn-circle bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
                 ❯
               </button>
             </div>

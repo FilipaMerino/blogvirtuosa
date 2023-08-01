@@ -73,8 +73,6 @@ const SignInForm = () => {
 
       <div className="flex justify-center p-10">
         <form onSubmit={handleSubmit} className="flex flex-col justify-center">
-
-
           <FormInput
             label="Email"
             type="email"
@@ -85,7 +83,6 @@ const SignInForm = () => {
             placeholder="Email"
             className="input input-bordered mb-5"
           />
-
           <FormInput
             label="Password"
             type="password"
