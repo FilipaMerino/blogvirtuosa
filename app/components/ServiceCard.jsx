@@ -8,7 +8,7 @@ const ServiceCard = ({ title, content, href }) => {
       <div className="card w-96 bg-[#f5f5f4] shadow-xl mb-5 lg:mb-1 lg:min-h-[19rem] mr-5 transform transition-transform hover:scale-105 cursor-pointer">
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
-          <hr className="horizontalLineCard mt-5"></hr>
+          <hr className="horizontalLineCard my-3"></hr>
           <p>{content}</p>
           <div className="card-actions justify-start lg:mt-2 text-sm flex items-center hover:underline">
             <span>Learn More</span>

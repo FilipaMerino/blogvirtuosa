@@ -10,18 +10,14 @@ import blogBackSquare from "./components/images/blogBackSquare.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-
-
 const HomePage = () => {
-
-
   return (
     <div>
       <Banner />
 
       {/* THIS IS THE ABOUT SESSION FROM THE HOME PAGE */}
-      <div className="bg-[#f2f2ef5e] mb-5 lg:h-[26rem] lg:p-10">
-        <div className=" mx-5 mt-10 p-5 md:flex md:mt-[1rem] ">
+      <div className="bg-[#f2f2ef5e] mb-5 p-5 lg:h-[26rem] lg:p-10">
+        <div className=" mx-5 p-5 md:flex md:mt-[1rem] ">
           <h1 className="text-3xl  md:text-5xl">We help businesses grow.</h1>
           <h1 className="text-3xl  md:text-5xl lg:ml-3 text-[#fb653e]">
             Together
@@ -38,10 +34,10 @@ const HomePage = () => {
             and well-being of our clients.
           </p>
         </div>
-        <div className="flex mx-5 p-5 md:mt-5 md:mx-5 w-[20rem] justify-start">
+        <div className="flex mx-5 p-5 md:mt-5 md:mx-5 lg:w-[20rem] justify-center lg:justify-start">
           <Link
             href="/about/team"
-            className="btn  border-none drop-shadow-md lg:w-64 bg-[#333333] text-white ">
+            className="btn border-none drop-shadow-md w-32 lg:w-64 bg-[#333333] text-white ">
             About us
           </Link>
         </div>
@@ -50,8 +46,8 @@ const HomePage = () => {
       {/* THIS IS THE SERVICE SESSION FROM THE HOME PAGE */}
 
       <div className="lg:p-10" id="service">
-        <div className="flex justify-center mb-10">
-          <hr className="horizontalLineCard"></hr>
+        <div className="flex justify-center lg:mb-10">
+          <hr className="horizontalLineCard "></hr>
         </div>
 
         <div className="mx-5 my-10 flex flex-col :items-center">
@@ -89,27 +85,41 @@ const HomePage = () => {
 
       {/* THIS IS THE MENTAL HEALTH SESSION FROM THE HOME PAGE */}
 
-      <div className="bg-[#f2f2ef5e] h-[30rem] p-5 lg:p-[5rem]">
+      <div className="bg-[#f2f2ef5e] lg:h-[30rem] p-10 flex flex-col justify-center">
+      <div className="lg:mx-20">
+
         <div className="flex justify-center mb-5">
           <h4>Hello Friend,</h4>
         </div>
 
-        <div className="flex justify-center mt-1">
-          <h1 className="text-3xl md:text-5xl">
-            You deserve to have a life and
+        <div className="hidden lg:block">
+          <div className="flex justify-center mt-1 mx-5">
+            <h1 className="text-3xl md:text-5xl">
+              You deserve to have a life and
+            </h1>
+          </div>
+
+          <div className="flex justify-center">
+            <h1 className="text-3xl md:text-5xl hidden lg:flex">
+              business that
+            </h1>
+            <h1 className="text-3xl md:text-5xl text-[#fb653e] ml-2">
+              doesn't drain you.
+            </h1>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center lg:hidden">
+          <h1 className="text-3xl md:text-5xl text-center">
+            You deserve to have a life and business that
+          </h1>
+          <h1 className="text-3xl md:text-5xl text-[#fb653e] italic">
+            {" "}
+            doesn't drain you.
           </h1>
         </div>
 
-        <div className="flex justify-center">
-          <h1 className="text-3xl md:text-5xl">business that</h1>
-          <h1 className="text-3xl md:text-5xl text-[#fb653e] ml-2">
-            doesn't
-          </h1>
-          <h1 className="text-3xl md:text-5xl italic text-[#fb653e] ml-2">
-            drain you.
-          </h1>
-        </div>
-        <div className="mx-5">
+        <div className="">
           <p className=" mt-5 md:mt-10 text-md text-justify">
             We often forget that our work should be something that sparks joy,
             right? You absolutely deserve a life and a business that lifts you
@@ -123,18 +133,19 @@ const HomePage = () => {
           </p>
         </div>
       </div>
+      </div>
 
       {/* THIS IS BLOG SESSION FROM THE HOME PAGE */}
 
       <div className="flex flex-col mx-5 lg:flex-row p-10 lg:mx-20 items-center md:justify-around">
-        <div className="lg:w-[60%] mr-20 lg:mr-10">
+        <div className="lg:w-[60%]  lg:mr-10">
           <Link href="/blog">
             <h1 className="text-3xl mb-5 lg:text-5xl hover:text-[#fb653e]">
               Our Blog
             </h1>
           </Link>
 
-          <hr className="horizontalLineCard block lg:hidden"></hr>
+          <hr className="horizontalLineCard block lg:hidden mb-5"></hr>
 
           <p className=" md:mb-5 text-justify">
             Our blog is more than just a place for us to share our thoughts.
@@ -169,7 +180,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
 
       {/* NEWSLETTER */}
       <Newsletter />

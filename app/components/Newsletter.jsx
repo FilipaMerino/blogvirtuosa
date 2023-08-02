@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 import subscribe from "./images/subscribe.png";
 
@@ -53,14 +53,14 @@ const Newsletter = () => {
         </div>
 
         <div
-          className="flex flex-col justify-center lg:mx-20 mx-5 p-5"
+          className="flex flex-col justify-center lg:mx-20 mx-5 p-10 lg:p-5"
           data-ff-el="root"
           data-ff-version="3"
           data-ff-type="inline"
           data-ff-name="ribbonBanner">
           <div data-ff-el="config" data-ff-config="eyJ0cmlnZ2VyIjp7Im1vZGUiOiJpbW1lZGlhdGVseSIsInZhbHVlIjowfSwib25TdWNjZXNzIjp7Im1vZGUiOiJtZXNzYWdlIiwibWVzc2FnZSI6IiIsInJlZGlyZWN0VXJsIjoiIn0sImNvaSI6ZmFsc2UsInNob3dGb3JSZXR1cm5WaXNpdG9ycyI6dHJ1ZSwibm90aWZpY2F0aW9uIjp0cnVlfQ=="></div>
           <div className="flex mb-4" data-paragraph="true">
-            <h1 className="text-3xl lg:text-5xl">Subscribe Our</h1>
+            <h1 className="text-3xl lg:text-5xl lg:text-start">Subscribe Our</h1>
             <h1 className="text-3xl lg:text-5xl ml-3 text-[#fb653e]">
               Newsletter
             </h1>
@@ -74,16 +74,18 @@ const Newsletter = () => {
             </p>
           </div>
 
-          <div className="flex">
+
+
+          <div className="">
             <form
               action="https://form.flodesk.com/forms/64c9882f7e6b513e5baccb16/submit"
               method="post"
               data-ff-el="form">
               <div data-ff-el="content">
-                <div className="flex gap-2" data-ff-el="fields">
+                <div className="flex flex-col lg:flex-row gap-3 lg:gap-2" data-ff-el="fields">
                   <div>
                     <input
-                      className="input drop-shadow-md"
+                      className="input drop-shadow-md w-full text-center md:text-start"
                       id="ff-64c9882f7e6b513e5baccb16-firstName"
                       type="text"
                       maxlength="255"
@@ -95,7 +97,7 @@ const Newsletter = () => {
 
                   <div>
                     <input
-                      className="input drop-shadow-md"
+                      className="input drop-shadow-md w-full text-center md:text-start"
                       id="ff-64c9882f7e6b513e5baccb16-email"
                       type="text"
                       maxlength="255"
