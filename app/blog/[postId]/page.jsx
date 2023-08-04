@@ -22,6 +22,7 @@ const page = ({ params }) => {
   return (
     <div>
       <div>{currentPost.title}</div>
+      <div>{currentPost.img}</div>
       <div>{currentPost.content}</div>
     </div>
   )

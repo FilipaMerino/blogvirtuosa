@@ -1,10 +1,17 @@
 import Image from "next/image";
-
+import Link from "next/link";
 import management from "../../components/images/management.jpeg";
 import obmplan from "../../components/images/obmplan.svg";
 import obmteam from "../../components/images/obmteam.svg";
 import obmoperations from "../../components/images/obmoperations.svg";
 import obmproject from "../../components/images/obmproject.svg";
+import ebook from "../../components/images/ebook.jpeg";
+import affordable from "../../components/images/affordable.png";
+import knowledge from "../../components/images/knowledge.png";
+import consulting from "../../components/images/consulting.png";
+import automation from "../../components/images/automation.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const BusinessManagement = () => {
   return (
@@ -50,23 +57,29 @@ const BusinessManagement = () => {
       </div>
 
       {/* PROJECT MANAGEMENT */}
-      <div className="lg:h-[30rem] bg-[#f2f2ef5e] flex items-center py-10 lg:p-0">
-        <div className="flex mx-20 items-center">
-          <div className="hidden lg:flex w-[35rem]">
+
+      <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e] py-10 lg:p-0">
+        <div className="flex mx-20 items-center w-[100%]">
+          <div className="hidden lg:flex">
             <Image src={obmproject} className="rounded" />
           </div>
 
-          <div className="lg:mx-20 mb-10 lg:mb-0">
-            
-            <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
+          <div className="lg:mx-20">
+            <h1 className="text-3xl lg:text-5xl text-center lg:text-start lg:mb-10 mb-5">
               Project Management
             </h1>
+
             <hr className="horizontalLineTeam hidden lg:block"></hr>
 
-            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
-              We specialize in managing complex projects from start to finish,
-              ensuring that all aspects of the projects are completed on time,
-              within budget and to the highest standards of quality.
+            <p className="text-sm lg:text-lg lg:mt-10 text-center lg:text-start">
+              Stay on top of your business projects with our expert project
+              management services. From initial planning to final delivery, we
+              handle every step with an eye for detail. Our goal is to ensure
+              your projects are completed on time, within budget, and to the
+              highest quality standards. We use proven project management
+              strategies and tools, adapted to fit the unique needs and
+              complexities of your business. With us managing your projects, you
+              can focus on the bigger picture - growing your business.
             </p>
           </div>
         </div>
@@ -77,8 +90,6 @@ const BusinessManagement = () => {
       <div className="lg:h-[30rem] flex items-center py-10 lg:p-0">
         <div className="flex mx-20 items-center">
           <div className="lg:mx-20">
-
-
             <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
               Team Management
             </h1>
@@ -86,12 +97,17 @@ const BusinessManagement = () => {
             <hr className="horizontalLineTeam  hidden lg:block"></hr>
 
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
-              We specialize in helping businesses optimize their team’s
-              performance and achieve their goals. We have a vast knowledge of
-              different leadership styles and personalities that helps us
-              understand your team's strengths and weaknesses. Through that
-              understanding, we can help identify areas for improvement and
-              develop strategies to enhance team productivity and collaboration.
+              Team Management Services: Building and managing a high-performing
+              team is crucial to the success of your business. Our team
+              management services focus on coordinating tasks, optimizing
+              workflows, and creating a collaborative environment that
+              encourages productivity and innovation. With our hands-on
+              approach, we assist in maximizing the potential of your team,
+              ensuring everyone collaborates effectively towards your business
+              goals. Let us manage your team, so you can concentrate on leading
+              your business to success. Don't have a team and looking to build
+              one? This service can be tailored to hiring and building your
+              business.
             </p>
           </div>
         </div>
@@ -109,7 +125,6 @@ const BusinessManagement = () => {
           </div>
 
           <div className="lg:mx-20">
-
             <h1 className="text-3xl lg:text-5xl text-center lg:text-start lg:mb-10 mb-5">
               Operations Management
             </h1>
@@ -117,13 +132,165 @@ const BusinessManagement = () => {
             <hr className="horizontalLineTeam hidden lg:block"></hr>
 
             <p className="text-sm lg:text-lg lg:mt-10 text-center lg:text-start">
-              Our operations management service is designed to help businesses
-              optimize their operations and achieve maximum efficiency. We
-              understand the importance of operations management and we work
-              closely with you to identify areas for improvement, develop
-              strategies to enhance productivity, and streamline your operations
-              to achieve better outcomes.
+              In today's fast-paced business environment, efficient operations
+              are vital. Our operations management services focus on improving
+              your internal processes and workflow for increased productivity
+              and efficiency. We oversee daily business activities, fine-tuning
+              as necessary to ensure a smooth operation. Our objective is to
+              align your operations with your strategic objectives, giving you
+              more time to concentrate on important strategic decisions and
+              growth. Partner with us and enjoy the peace of mind that comes
+              from knowing your operations are in capable hands.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* CONSULTING */}
+
+      <div className="lg:h-[30rem] flex items-center py-10 lg:p-0">
+        <div className="flex mx-20 items-center">
+          <div className="lg:mx-20">
+            <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
+              1:1 Consulting
+            </h1>
+
+            <hr className="horizontalLineTeam  hidden lg:block"></hr>
+
+            <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
+              Your business deserves personalized attention, and that's exactly
+              what we provide with our 1:1 consulting service. We engage with
+              you directly, understanding your unique challenges and
+              opportunities. Together, we create actionable strategies designed
+              to drive sustainable growth for your business. Our comprehensive
+              approach covers all areas - from optimizing your operations to
+              expanding your market reach. With our 1:1 consulting service, you
+              receive expert guidance and tailored solutions that address your
+              specific needs, helping your business thrive in a sustainable and
+              balanced manner.
+            </p>
+          </div>
+        </div>
+
+        <div className="hidden lg:flex mr-20">
+          <Image src={consulting} className="rounded" />
+        </div>
+      </div>
+
+      {/* THIS IS THE SECTION FOR DIY OPTIONS */}
+
+      <div className="flex flex-col items-center justify-center bg-[#f2f2ef5e]">
+        <div className="mx-32 p-10">
+          <div className="flex justify-center lg:mb-10">
+            <hr className="horizontalLineCard "></hr>
+          </div>
+
+          <div className="flex flex-col items-center mb-5">
+            <h1 className="text-3xl md:text-5xl">
+              Budget-Friendly DIY Services
+            </h1>
+          </div>
+
+          <div>
+            <p className="text-center">
+              We understand that every business has different needs and
+              resources, which is why we offer a variety of affordable,
+              do-it-yourself solutions.
+            </p>
+            <div className="flex justify-center p-10 gap-20">
+              <div className="flex flex-col items-center">
+                <Image src={affordable} className="w-16 mb-3" />
+                <h4 className="text-lg">Cost Effective</h4>
+                <p className="text-xs">small paragraph about this </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <Image src={knowledge} className="w-16 mb-3" />
+                <h4 className="text-lg">knowledge</h4>
+                <p className="text-xs">small paragraph about this</p>
+              </div>
+            </div>
+
+            <p className="text-justify">
+              These services are designed to equip you with the essential tools
+              and guidance you need to effectively manage and grow your business
+              at your own pace. Our DIY services are not just cost-effective;
+              they're an <strong>investment into your business's future</strong>
+              . Whether it's planning for your next quarter with our{" "}
+              <strong>Roadmap to Success</strong> or streamlining your
+              operations with our <strong>SOP QuickStart</strong>, our
+              budget-friendly options are dedicated to supporting your journey
+              toward sustainable growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* THOSE ARE THE DIY OPTIONS */}
+      <div className="lg:h-[45rem] flex items-center bg-[#f2f2ef5e]">
+        <div className="flex justify-center gap-20 p-5 mx-10">
+          <div className="w-[40%]">
+            <div className="flex flex-col items-center mt-3">
+              <Link href="https://www.adminvirtuosa.com/Roadmaptosuccess/">
+                <Image
+                  src={ebook}
+                  className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md"
+                />
+              </Link>
+
+              <h2 className="text-center text-xl font-semibold">
+                Roadmap to Success
+              </h2>
+              <p className="text-sm text-justify my-3 w-[90%]">
+                Planning is key to any business's success, and with our Roadmap
+                to Success, we make it easy and budget-friendly. This
+                do-it-yourself service provides a comprehensive 90-day planning
+                report, offering a clear and actionable strategy to help you
+                meet your business goals.
+              </p>
+            </div>
+            <div className="flex justify-end mx-6 items-center">
+              <Link
+                href="https://www.adminvirtuosa.com/Roadmaptosuccess/"
+                className="hover:underline text-sm flex items-center font-semibold">
+                <p>Learn More</p>
+
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="text-sm md:w-2 ml-2"
+                />
+              </Link>
+            </div>
+          </div>
+
+          <div className="w-[40%]">
+            <div className="flex flex-col items-center mt-3">
+              <Image
+                src={automation}
+                className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md"
+              />
+              <h2 className="text-center text-xl font-semibold">
+                SOP QuickStart
+              </h2>
+              <p className="text-sm text-justify mt-3 ">
+                Standard Operating Procedures (SOPs) are the backbone of any
+                successful operation, providing consistency, clarity, and
+                efficiency. This service provides you with comprehensive
+                guidance on how to establish effective SOPs in your business.
+                You'll receive expert advice, practical steps, and templates
+                that streamline the SOP creation process.
+              </p>
+            </div>
+            <div className="flex justify-end items-center">
+              <Link
+                href="https://www.adminvirtuosa.com/SOP/"
+                className="hover:underline text-sm flex items-center font-semibold">
+                <p>Learn More</p>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="text-sm md:w-2 ml-2"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
