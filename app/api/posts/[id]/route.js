@@ -1,4 +1,3 @@
-import posts from "../data.json";
 import { NextResponse } from "next/server";
 
 // get a post by id
