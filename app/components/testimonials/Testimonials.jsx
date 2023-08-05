@@ -46,13 +46,13 @@ const Testimonials = () => {
 
   return (
     <div className="lg:h-[40rem] flex justify-center">
-      <div className="flex items-center mx-20">
-        <div className="w-[40%] mr-20">
+      <div className="flex flex-col lg:flex-row items-center mx-10 lg:mx-20">
+        <div className="lg:w-[40%] lg:mr-20 flex flex-col items-center lg:items-start my-10 p-5 lg:my-0 lx:p-0">
           {/* AQUI VAI ESTAR A CENA COM O TESTIMONIAL A OCUPAR METADE */}
           <h1 className="text-3xl lg:text-5xl mb-3">Testimonials</h1>
-          <hr className="horizontalLineWebDev my-5"></hr>
+          <hr className="horizontalLineWebDev my-5 hidden lg:block"></hr>
 
-          <p className="text-md md:text-lg mb-3">
+          <p className="text-md md:text-lg mb-3 text-center lg:text-start">
             Our customers are at the heart of everything we do. Their
             satisfaction isn't just a goal, it's our measure of success. Here's
             what some of our valued customers have to say about their
@@ -67,7 +67,7 @@ const Testimonials = () => {
         </div>
 
         {/* Aqui vai estar o testimonial */}
-        <div className="w-[55%] flex ">
+        <div className="lg:w-[55%] flex ">
           <div className="carousel ">
             {testimonials.map((testimonial, index) => (
               <div
@@ -82,7 +82,7 @@ const Testimonials = () => {
                     alt="testimonial"></img>
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center p-10 lg:p-0">
                   <h4 className="text-xl md:text-2xl font-semibold mb-1">
                     {testimonial.name}
                   </h4>
@@ -90,7 +90,7 @@ const Testimonials = () => {
                   <p className="text-xs md:text-sm italic mb-5">
                     {testimonial.companyName}
                   </p>
-                  <p className="text-md italic mx-20 text-center">
+                  <p className="text-sm italic  lg:mx-20 text-center">
                     {testimonial.testimonialText}
                   </p>
 
@@ -104,10 +104,10 @@ const Testimonials = () => {
                   )}
                 </div>
 
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 lg:top-1/2 top-10 ">
                   <button
                     onClick={handlePrevious}
-                    className="btn btn-circle bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
+                    className="btn btn-circle  bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
                     ❮
                   </button>
                   <button

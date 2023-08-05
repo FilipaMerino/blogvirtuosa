@@ -20,10 +20,16 @@ const page = ({ params }) => {
     return <div>loading...</div>
   }
   return (
+    <div className='mx-5 lg:mx-20 p-10 flex flex-col items-center justify-center'>
     <div>
-      <div>{currentPost.title}</div>
-      <div>{currentPost.img}</div>
-      <div>{currentPost.content}</div>
+    </div>
+      <img src={currentPost.img} alt={currentPost.title} className='w-[40rem] rounded-lg' />
+      <div className="flex flex-col items-center">
+      <h1 className="text-3xl md:text-4xl text-center lg:w-[40rem] mt-5">{currentPost.title}</h1>
+      <hr className="horizontalLineCard my-5"></hr>
+
+      <p className='text-sm md:text-[16px] lg:w-[50rem] text-justify leading-6'>{currentPost.content}</p>
+      </div>
     </div>
   )
 }

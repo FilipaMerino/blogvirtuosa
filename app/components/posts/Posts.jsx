@@ -72,17 +72,30 @@ const Posts = () => {
 
               <div className="flex justify-between">
                 <div className="flex justify-start items-center ">
-                  <Link
-                    href=""
+
+
+                 <Link href={`/blog/${post.id}`} className="flex items-center text-sm hover:text-[#fb653e]">
+                <p className="text-sm hover:text-[#fb653e]">Learn More</p>
+                <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="flex ml-2 text-sm  md:w-2"
+                    />
+              </Link>
+
+
+
+
+                  {/* <a
+                    href={post.href}
                     className="text-xs hover:underline hover:text-[#fb653e]">
                     Learn More
-                  </Link>
+                  </a>
                   <a href={post.href}>
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="flex ml-2 text-sm  md:w-2"
                     />
-                  </a>
+                  </a> */}
                 </div>
 
 
