@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import ValueCard from "../components/ValueCard";
+import Testimonials from "../components/testimonials/Testimonials";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -114,19 +115,6 @@ const AboutPage = () => {
 
       {/* HERE IS THE VALUES */}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="flex flex-col lg:flex-row lg:h-[30rem] md:mx-20 justify-around">
         <div className="flex items-center justify-center mt-10">
           <h1 className="text-3xl lg:text-5xl">Our</h1>
@@ -140,10 +128,14 @@ const AboutPage = () => {
               content={values[currentSlide].content}
             />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
-              <button onClick={handlePrevious} className="btn btn-circle bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
+              <button
+                onClick={handlePrevious}
+                className="btn btn-circle bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
                 ❮
               </button>
-              <button onClick={handleNext} className="btn btn-circle bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
+              <button
+                onClick={handleNext}
+                className="btn btn-circle bg-[#f2f2f2]  text-[#333333] hover:bg-[#e0e0e0] border-none">
                 ❯
               </button>
             </div>
@@ -251,8 +243,6 @@ const AboutPage = () => {
         </div>
       </div> */}
 
-
-
       {/* {/* THIS IS THE TEAM SESSION */}
 
       <div className="bg-[#f2f2ef5e] flex items-center my-auto">
@@ -289,7 +279,7 @@ const AboutPage = () => {
                 <Link href="./about/louisa">
                   <Image
                     src={LouisaPic}
-                    className="transform hover:scale-105 transition-transform"
+                    className="transform hover:scale-105 transition-transform border"
                   />
                   {/* The semi-transparent overlay */}
                   <div className="overlay"></div>
@@ -311,6 +301,12 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* TESTIMONIALS SESSION */}
+
+      <div>
+        <Testimonials />
       </div>
     </div>
   );

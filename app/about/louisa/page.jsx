@@ -9,10 +9,10 @@ import quotes1 from "../../components/images/quotes1.svg";
 import quotes2 from "../../components/images/quotes2.svg";
 
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import degree from "../../components/images/degree.svg";
 import experience from "../../components/images/experience.svg";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const images = [LouisaPic, LouisaPic2, LouisaPic3];
 // const imagesFilipa =[filipa, filipa1, filipa2];

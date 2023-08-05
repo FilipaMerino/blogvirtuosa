@@ -4,7 +4,7 @@ import { useState, useEffect, useContext } from "react";
 import AddPost from "./AddPost";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { UserContext } from "../contexts/UserContext";
+import { UserContext } from "../../contexts/UserContext";
 
 
 
