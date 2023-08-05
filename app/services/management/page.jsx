@@ -197,16 +197,24 @@ const BusinessManagement = () => {
               resources, which is why we offer a variety of affordable,
               do-it-yourself solutions.
             </p>
-            <div className="flex justify-center p-10 gap-20">
+            <div className="flex justify-center items-center p-10 gap-20">
               <div className="flex flex-col items-center">
                 <Image src={affordable} className="w-16 mb-3" />
-                <h4 className="text-lg">Cost Effective</h4>
-                <p className="text-xs">small paragraph about this </p>
+                <div className="flex flex-col items-center">
+                  <h4 className="text-lg mb-2">Cost Effective</h4>
+                  <p className="text-xs text-center">
+                    Say goodbye to outsourcing expenses and embrace efficient,
+                    cost-effective strategies for sustainable growth.
+                  </p>
+                </div>
               </div>
               <div className="flex flex-col items-center">
                 <Image src={knowledge} className="w-16 mb-3" />
-                <h4 className="text-lg">knowledge</h4>
-                <p className="text-xs">small paragraph about this</p>
+                <h4 className="text-lg mb-2">knowledge</h4>
+                <p className="text-xs text-center">
+                  Gain valuable insights through our knowledge-driven approach
+                  that supports informed decisions for your business success.
+                </p>
               </div>
             </div>
 
@@ -226,9 +234,9 @@ const BusinessManagement = () => {
       </div>
 
       {/* THOSE ARE THE DIY OPTIONS */}
-      <div className="lg:h-[45rem] flex items-center bg-[#f2f2ef5e]">
-        <div className="flex justify-center gap-20 p-5 mx-10">
-          <div className="w-[40%]">
+      <div className="lg:h-[40rem] flex items-center bg-[#f2f2ef5e] p-5 lg:p-0">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center gap-10 lg:gap-20 lg:mx-10">
+          <div className="lg:w-[40%]">
             <div className="flex flex-col items-center mt-3">
               <Link href="https://www.adminvirtuosa.com/Roadmaptosuccess/">
                 <Image
@@ -240,7 +248,10 @@ const BusinessManagement = () => {
               <h2 className="text-center text-xl font-semibold">
                 Roadmap to Success
               </h2>
-              <p className="text-sm text-justify my-3 w-[90%]">
+              <div className="flex justify-center lg:hidden">
+                <hr className="horizontalLineCard mt-3"></hr>
+              </div>
+              <p className="text-sm text-center lg:text-justify my-3 lg:w-[90%] mx-10">
                 Planning is key to any business's success, and with our Roadmap
                 to Success, we make it easy and budget-friendly. This
                 do-it-yourself service provides a comprehensive 90-day planning
@@ -248,7 +259,7 @@ const BusinessManagement = () => {
                 meet your business goals.
               </p>
             </div>
-            <div className="flex justify-end mx-6 items-center">
+            <div className="flex justify-center lg:justify-end mx-6 items-center">
               <Link
                 href="https://www.adminvirtuosa.com/Roadmaptosuccess/"
                 className="hover:underline text-sm flex items-center font-semibold">
@@ -262,17 +273,24 @@ const BusinessManagement = () => {
             </div>
           </div>
 
-          <div className="w-[40%]">
+
+          <div className="lg:w-[40%]">
             <div className="flex flex-col items-center mt-3">
-              <Image
-                src={automation}
-                className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md"
-              />
+              <Link href="https://www.adminvirtuosa.com/Roadmaptosuccess/">
+                <Image
+                  src={automation}
+                  className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md"
+                />
+              </Link>
+
               <h2 className="text-center text-xl font-semibold">
-                SOP QuickStart
+              SOP QuickStart
               </h2>
-              <p className="text-sm text-justify mt-3 ">
-                Standard Operating Procedures (SOPs) are the backbone of any
+              <div className="flex justify-center lg:hidden">
+                <hr className="horizontalLineCard mt-3"></hr>
+              </div>
+              <p className="text-sm text-center lg:text-justify my-3 lg:w-[90%] mx-10">
+              Standard Operating Procedures (SOPs) are the backbone of any
                 successful operation, providing consistency, clarity, and
                 efficiency. This service provides you with comprehensive
                 guidance on how to establish effective SOPs in your business.
@@ -280,11 +298,12 @@ const BusinessManagement = () => {
                 that streamline the SOP creation process.
               </p>
             </div>
-            <div className="flex justify-end items-center">
+            <div className="flex justify-center lg:justify-end mx-6 items-center">
               <Link
-                href="https://www.adminvirtuosa.com/SOP/"
+                href="https://www.adminvirtuosa.com/Roadmaptosuccess/"
                 className="hover:underline text-sm flex items-center font-semibold">
                 <p>Learn More</p>
+
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   className="text-sm md:w-2 ml-2"
@@ -292,6 +311,11 @@ const BusinessManagement = () => {
               </Link>
             </div>
           </div>
+
+         
+
+
+
         </div>
       </div>
     </div>
