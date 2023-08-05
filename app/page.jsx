@@ -86,53 +86,52 @@ const HomePage = () => {
       {/* THIS IS THE MENTAL HEALTH SESSION FROM THE HOME PAGE */}
 
       <div className="bg-[#f2f2ef5e] lg:h-[30rem] p-10 flex flex-col justify-center">
-      <div className="lg:mx-20">
-
-        <div className="flex justify-center mb-5">
-          <h4>Hello Friend,</h4>
-        </div>
-
-        <div className="hidden lg:block">
-          <div className="flex justify-center mt-1 mx-5">
-            <h1 className="text-3xl md:text-5xl">
-              You deserve to have a life and
-            </h1>
+        <div className="lg:mx-20">
+          <div className="flex justify-center mb-5">
+            <h4>Hello Friend,</h4>
           </div>
 
-          <div className="flex justify-center">
-            <h1 className="text-3xl md:text-5xl hidden lg:flex">
-              business that
+          <div className="hidden lg:block">
+            <div className="flex justify-center mt-1 mx-5">
+              <h1 className="text-3xl md:text-5xl">
+                You deserve to have a life and
+              </h1>
+            </div>
+
+            <div className="flex justify-center">
+              <h1 className="text-3xl md:text-5xl hidden lg:flex">
+                business that
+              </h1>
+              <h1 className="text-3xl md:text-5xl text-[#fb653e] ml-2">
+                doesn't drain you.
+              </h1>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center lg:hidden">
+            <h1 className="text-3xl md:text-5xl text-center">
+              You deserve to have a life and business that
             </h1>
-            <h1 className="text-3xl md:text-5xl text-[#fb653e] ml-2">
+            <h1 className="text-3xl md:text-5xl text-[#fb653e] italic">
+              {" "}
               doesn't drain you.
             </h1>
           </div>
-        </div>
 
-        <div className="flex flex-col items-center lg:hidden">
-          <h1 className="text-3xl md:text-5xl text-center">
-            You deserve to have a life and business that
-          </h1>
-          <h1 className="text-3xl md:text-5xl text-[#fb653e] italic">
-            {" "}
-            doesn't drain you.
-          </h1>
+          <div className="">
+            <p className=" mt-5 md:mt-10 text-md text-justify">
+              We often forget that our work should be something that sparks joy,
+              right? You absolutely deserve a life and a business that lifts you
+              up, rather than drains you. Life's too short to feel constantly
+              exhausted or overwhelmed. Picture a business that's in sync with
+              your life, one that values your happiness just as much as your
+              success. Imagine a life where you wake up every morning excited
+              and inspired. Sounds nice, doesn't it? This is what you're meant
+              to have, this is what you deserve. Let's take this journey
+              together, realigning our work with what truly matters.
+            </p>
+          </div>
         </div>
-
-        <div className="">
-          <p className=" mt-5 md:mt-10 text-md text-justify">
-            We often forget that our work should be something that sparks joy,
-            right? You absolutely deserve a life and a business that lifts you
-            up, rather than drains you. Life's too short to feel constantly
-            exhausted or overwhelmed. Picture a business that's in sync with
-            your life, one that values your happiness just as much as your
-            success. Imagine a life where you wake up every morning excited and
-            inspired. Sounds nice, doesn't it? This is what you're meant to
-            have, this is what you deserve. Let's take this journey together,
-            realigning our work with what truly matters.
-          </p>
-        </div>
-      </div>
       </div>
 
       {/* THIS IS BLOG SESSION FROM THE HOME PAGE */}
@@ -149,11 +148,10 @@ const HomePage = () => {
 
           <p className=" md:mb-5 text-justify">
             Our blog is more than just a place for us to share our thoughts.
-            It's a platform for us to connect, engage, and grow together. We've
-            filled it with enlightening articles, helpful tips, and the latest
-            industry trends to keep you informed and inspired. Start exploring
-            today and let's embark on this journey of learning and discovery
-            together!
+            It's a platform for us to connect, and grow together. Here you will
+            find insightful articles, and helpful tips to run your business
+            strategically. Start reading today and let's grow your business and
+            knowledge together!
           </p>
 
           <div className="flex items-center text-sm mt-5">

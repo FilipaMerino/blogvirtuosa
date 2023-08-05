@@ -60,7 +60,7 @@ const BusinessManagement = () => {
 
       <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e] py-10 lg:p-0">
         <div className="flex mx-20 items-center w-[100%]">
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex w-full">
             <Image src={obmproject} className="rounded" />
           </div>
 
@@ -112,7 +112,7 @@ const BusinessManagement = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex mr-20">
+        <div className="hidden lg:flex mr-20 w-full ">
           <Image src={obmteam} className="rounded" />
         </div>
       </div>
@@ -173,7 +173,7 @@ const BusinessManagement = () => {
         </div>
 
         <div className="hidden lg:flex mr-20">
-          <Image src={consulting} className="rounded" />
+          <Image src={consulting} className="rounded w-full" />
         </div>
       </div>
 
