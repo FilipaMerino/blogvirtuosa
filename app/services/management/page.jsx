@@ -180,28 +180,33 @@ const BusinessManagement = () => {
       {/* THIS IS THE SECTION FOR DIY OPTIONS */}
 
       <div className="flex flex-col items-center justify-center bg-[#f2f2ef5e]">
-        <div className="mx-32 p-10">
-          <div className="flex justify-center lg:mb-10">
+        <div className="lg:mx-32 p-10">
+          <div className="flex justify-center mb-10">
             <hr className="horizontalLineCard "></hr>
           </div>
 
           <div className="flex flex-col items-center mb-5">
-            <h1 className="text-3xl md:text-5xl">
+            <h1 className="text-3xl md:text-5xl text-center">
               Budget-Friendly DIY Services
             </h1>
           </div>
 
           <div>
-            <p className="text-center">
+            <p className="text-sm lg:text-md text-center">
               We understand that every business has different needs and
               resources, which is why we offer a variety of affordable,
               do-it-yourself solutions.
             </p>
-            <div className="flex justify-center items-center p-10 gap-20">
-              <div className="flex flex-col items-center">
+
+
+
+
+            <div className="flex flex-col lg:flex-row justify-center items-center m-20 lg:my-0 lg:p-20 lg:gap-20">
+              <div className="flex flex-col items-center mb-10 lg:mb-0">
+
                 <Image src={affordable} className="w-16 mb-3" />
                 <div className="flex flex-col items-center">
-                  <h4 className="text-lg mb-2">Cost Effective</h4>
+                  <h4 className="text-lg mb-2 text-center">Cost Effective</h4>
                   <p className="text-xs text-center">
                     Say goodbye to outsourcing expenses and embrace efficient,
                     cost-effective strategies for sustainable growth.
@@ -210,7 +215,7 @@ const BusinessManagement = () => {
               </div>
               <div className="flex flex-col items-center">
                 <Image src={knowledge} className="w-16 mb-3" />
-                <h4 className="text-lg mb-2">knowledge</h4>
+                <h4 className="text-lg mb-2 text-center">knowledge</h4>
                 <p className="text-xs text-center">
                   Gain valuable insights through our knowledge-driven approach
                   that supports informed decisions for your business success.
@@ -218,7 +223,7 @@ const BusinessManagement = () => {
               </div>
             </div>
 
-            <p className="text-justify">
+            <p className="text-sm lg:text-md text-center lg:text-justify ">
               These services are designed to equip you with the essential tools
               and guidance you need to effectively manage and grow your business
               at your own pace. Our DIY services are not just cost-effective;
@@ -232,6 +237,11 @@ const BusinessManagement = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
 
       {/* THOSE ARE THE DIY OPTIONS */}
       <div className="lg:h-[40rem] flex items-center bg-[#f2f2ef5e] p-5 lg:p-0">
@@ -312,7 +322,7 @@ const BusinessManagement = () => {
             </div>
           </div>
 
-         
+
 
 
 
