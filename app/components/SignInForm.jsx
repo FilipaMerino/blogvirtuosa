@@ -5,14 +5,10 @@ import { useState, useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
 
 import {
-  signInWithGooglePopup,
-  createUserDocumentFromAuth,
   signInAuthUSerWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
 
 import FormInput from "../components/FormInput";
-
-import { FcGoogle } from "react-icons/fc";
 
 const defaultFormFields = {
   email: "",
@@ -63,10 +59,7 @@ const SignInForm = () => {
     setFormFields({ ...formFields, [name]: value });
   };
 
-  const signInWithGoogle = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUserDocumentFromAuth(user);
-  };
+
 
   return (
     <div className="flex flex-col justify-center ">
@@ -101,14 +94,10 @@ const SignInForm = () => {
 
 
           <div className="flex gap-4">
-            <button type="submit" className="btn bg-[#333333] text-white">
+            <button type="submit" className="btn btn-primary w-full  text-white">
               Sign In
             </button>
-            <button
-              type="button"
-              onClick={signInWithGoogle}
-              className="btn bg-[#4285F4] text-white">Sign In With <FcGoogle />
-            </button>
+
           </div>
         </form>
       </div>
