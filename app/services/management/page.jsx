@@ -59,9 +59,16 @@ const BusinessManagement = () => {
       {/* PROJECT MANAGEMENT */}
 
       <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e] py-10 lg:p-0">
-        <div className="flex mx-20 items-center w-[100%]">
+        <div className="flex mx-10 lg:mx-20 items-center ">
           <div className="hidden lg:flex w-full">
-            <Image src={obmproject} className="rounded" />
+            <Image
+              src={obmproject}
+              className="rounded"
+              alt="Project Management"
+              objectFit="cover"
+              width={300}
+              height={300}
+            />
           </div>
 
           <div className="lg:mx-20">
@@ -70,7 +77,9 @@ const BusinessManagement = () => {
             </h1>
 
             <hr className="horizontalLineTeam hidden lg:block"></hr>
-
+            <div className="flex justify-center lg:hidden">
+                <hr className="horizontalLineCard mb-3"></hr>
+              </div>
             <p className="text-sm lg:text-lg lg:mt-10 text-center lg:text-start">
               Stay on top of your business projects with our expert project
               management services. From initial planning to final delivery, we
@@ -88,12 +97,14 @@ const BusinessManagement = () => {
       {/* TEAM MANAGEMENT */}
 
       <div className="lg:h-[30rem] flex items-center py-10 lg:p-0">
-        <div className="flex mx-20 items-center">
+        <div className="flex mx-10 lg:mx-20 items-center ">
           <div className="lg:mx-20">
             <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
               Team Management
             </h1>
-
+            <div className="flex justify-center lg:hidden">
+                <hr className="horizontalLineCard mb-3"></hr>
+              </div>
             <hr className="horizontalLineTeam  hidden lg:block"></hr>
 
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
@@ -113,15 +124,21 @@ const BusinessManagement = () => {
         </div>
 
         <div className="hidden lg:flex mr-20 w-full ">
-          <Image src={obmteam} className="rounded" />
+          <Image src={obmteam} className="rounded"
+          objectFit="cover"
+              width={300}
+              height={300} />
         </div>
       </div>
 
       {/* OPERATIONS MANAGEMENT */}
       <div className="lg:h-[30rem] flex items-center bg-[#f2f2ef5e] py-10 lg:p-0">
-        <div className="flex mx-20 items-center w-[100%]">
-          <div className="hidden lg:flex">
-            <Image src={obmoperations} className="rounded" />
+        <div className="flex mx-10 lg:mx-20 items-center w-[100%]">
+          <div className="hidden lg:flex w-full">
+            <Image src={obmoperations} className="rounded"
+            objectFit="cover"
+              width={300}
+              height={300} />
           </div>
 
           <div className="lg:mx-20">
@@ -130,7 +147,9 @@ const BusinessManagement = () => {
             </h1>
 
             <hr className="horizontalLineTeam hidden lg:block"></hr>
-
+            <div className="flex justify-center lg:hidden">
+                <hr className="horizontalLineCard mb-3"></hr>
+              </div>
             <p className="text-sm lg:text-lg lg:mt-10 text-center lg:text-start">
               In today's fast-paced business environment, efficient operations
               are vital. Our operations management services focus on improving
@@ -149,13 +168,18 @@ const BusinessManagement = () => {
       {/* CONSULTING */}
 
       <div className="lg:h-[30rem] flex items-center py-10 lg:p-0">
-        <div className="flex mx-20 items-center">
+        <div className="flex mx-10 lg:mx-20 items-center">
           <div className="lg:mx-20">
             <h1 className="text-3xl lg:text-5xl lg:mb-10 text-center lg:text-start mb-5">
               1:1 Consulting
             </h1>
 
             <hr className="horizontalLineTeam  hidden lg:block"></hr>
+
+
+            <div className="flex justify-center lg:hidden">
+                <hr className="horizontalLineCard mb-3"></hr>
+              </div>
 
             <p className="text-sm text-center lg:text-lg lg:mt-10 lg:text-start">
               Your business deserves personalized attention, and that's exactly
@@ -172,8 +196,10 @@ const BusinessManagement = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex mr-20">
-          <Image src={consulting} className="rounded w-full" />
+        <div className="hidden lg:flex mr-20 w-full">
+          <Image src={consulting} className="rounded" alt="Consulting" objectFit="cover"
+              width={300}
+              height={300} />
         </div>
       </div>
 
@@ -192,30 +218,27 @@ const BusinessManagement = () => {
           </div>
 
           <div>
-            <p className="text-sm lg:text-md text-center">
+            <p className="text-sm md:text-lg text-center mx-20">
               We understand that every business has different needs and
               resources, which is why we offer a variety of affordable,
               do-it-yourself solutions.
             </p>
 
-
-
-
-            <div className="flex flex-col lg:flex-row justify-center items-center m-20 lg:my-0 lg:p-20 lg:gap-20">
+            <div className="flex flex-col lg:flex-row justify-center items-center mx-20 my-10 lg:my-0 lg:p-20 lg:gap-20">
               <div className="flex flex-col items-center mb-10 lg:mb-0">
-
                 <Image src={affordable} className="w-16 mb-3" />
                 <div className="flex flex-col items-center">
-                  <h4 className="text-lg mb-2 text-center">Cost Effective</h4>
+                  <h4 className="text-lg mb-2 text-center font-semibold ">Cost Effective</h4>
                   <p className="text-xs text-center">
                     Say goodbye to outsourcing expenses and embrace efficient,
                     cost-effective strategies for sustainable growth.
                   </p>
                 </div>
               </div>
+
               <div className="flex flex-col items-center">
                 <Image src={knowledge} className="w-16 mb-3" />
-                <h4 className="text-lg mb-2 text-center">knowledge</h4>
+                <h4 className="text-lg mb-2 text-center font-semibold">knowledge</h4>
                 <p className="text-xs text-center">
                   Gain valuable insights through our knowledge-driven approach
                   that supports informed decisions for your business success.
@@ -223,7 +246,7 @@ const BusinessManagement = () => {
               </div>
             </div>
 
-            <p className="text-sm lg:text-md text-center lg:text-justify ">
+            <p className="text-sm md:text-lg text-center ">
               These services are designed to equip you with the essential tools
               and guidance you need to effectively manage and grow your business
               at your own pace. Our DIY services are not just cost-effective;
@@ -237,11 +260,6 @@ const BusinessManagement = () => {
           </div>
         </div>
       </div>
-
-
-
-
-
 
       {/* THOSE ARE THE DIY OPTIONS */}
       <div className="lg:h-[40rem] flex items-center bg-[#f2f2ef5e] p-5 lg:p-0">
@@ -283,24 +301,24 @@ const BusinessManagement = () => {
             </div>
           </div>
 
-
           <div className="lg:w-[40%]">
             <div className="flex flex-col items-center mt-3">
               <Link href="https://www.adminvirtuosa.com/Roadmaptosuccess/">
                 <Image
                   src={automation}
-                  className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md"
+                  className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md
+                  "
                 />
               </Link>
 
               <h2 className="text-center text-xl font-semibold">
-              SOP QuickStart
+                SOP QuickStart
               </h2>
               <div className="flex justify-center lg:hidden">
                 <hr className="horizontalLineCard mt-3"></hr>
               </div>
               <p className="text-sm text-center lg:text-justify my-3 lg:w-[90%] mx-10">
-              Standard Operating Procedures (SOPs) are the backbone of any
+                Standard Operating Procedures (SOPs) are the backbone of any
                 successful operation, providing consistency, clarity, and
                 efficiency. This service provides you with comprehensive
                 guidance on how to establish effective SOPs in your business.
@@ -321,11 +339,6 @@ const BusinessManagement = () => {
               </Link>
             </div>
           </div>
-
-
-
-
-
         </div>
       </div>
     </div>
