@@ -218,7 +218,7 @@ const BusinessManagement = () => {
           </div>
 
           <div>
-            <p className="text-sm md:text-lg text-center mx-20">
+            <p className="text-sm md:text-lg text-center lg:mx-20">
               We understand that every business has different needs and
               resources, which is why we offer a variety of affordable,
               do-it-yourself solutions.
