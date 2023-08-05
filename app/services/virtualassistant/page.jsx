@@ -1,7 +1,7 @@
 import Image from "next/image";
 import calendar from "../../components/images/calendar.jpeg";
-import client from "../../components/images/client.svg";
-import socialmedia from "../../components/images/socialmedia.svg";
+import client from "../../components/images/client.png";
+// import socialmedia from "../../components/images/socialmedia.svg";
 import email from "../../components/images/email.svg";
 import event from "../../components/images/event.svg";
 import planner from "../../components/images/planner.svg";
