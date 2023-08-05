@@ -31,51 +31,60 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-10">
-      <AddTestimonial refreshTestimonials={fetchTestimonials} />
+    // <div className="items-center p-10">
+    //   <AddTestimonial refreshTestimonials={fetchTestimonials} />
 
-      {testimonials.map((testimonial) => (
+    //   <div className="flex justify-center mb-5">
+    //       <hr className="horizontalLineCard my-3"></hr>
+    //     </div>
+    //   <div className="flex flex-col items-center justify-center">
+    //     <h1 className="text-3xl lg:text-5xl mb-3">
+    //       Testimonials
+    //     </h1>
+    //     <p className="text-sm md:text-md">
+    //       Our customers' happiness is our top priority, and we're humbled by the
+    //       kind words they share.{" "}
+    //     </p>
+    //   </div>
+
+    //   {testimonials.map((testimonial) => (
+    //     <div className="flex flex-col items-center justify-center my-10">
+    //     <div>
+    //       <img
+    //         src={testimonial.avatar}
+    //         alt="testimonial"
+    //         className="w-32"></img>
+    //     </div>
+    //     <div className="flex flex-col items-center">
+    //       <h4 className="text-xl md:text-2xl font-semibold mb-1">{testimonial.name}</h4>
+    //       <p className="text-xs md:text-sm italic mb-5">{testimonial.companyName}</p>
+    //       <p className="mx-20 text-center">{testimonial.testimonialText}</p>
+    //     </div>
+
+    //     </div>
+    //   ))}
+    // </div>
+
+    <div className="lg:h-[40rem]">
+      <div className="flex items-center">
+        <div className="w-[50%]">
+          {/* AQUI VAI ESTAR A CENA COM O TESTIMONIAL A OCUPAR METADE */}
+          <h1 className="text-3xl lg:text-5xl mb-3">Testimonials</h1>
+
+          <p className="text-md md:text-lg">
+            Our customers' happiness is our top priority, and we're humbled by
+            the kind words they share.
+          </p>
+        </div>
+
+        <div>{/* Aqui vai estar o testimonial */}
 
 
 
-          <div>
-            <img src={testimonial.avatar} alt="testimonial" className="w-32"></img>
-          </div>
 
 
-
-
-
-
-
-        /* <div className="mb-10">
-          <div className=" flex flex-col items-center w-[30rem] lg:w-[40rem] lg:mb-10">
-            <h3 className="text-xl lg:text-3xl mb-10 text-center">
-              {testimonial.name}
-            </h3>
-            <figure>
-              <img
-                src={testimonial.avatar}
-                alt="avatar"
-                className="hover:brightness-90 transition-all duration-200 w-[40rem] mb-5 rounded"
-              />
-            </figure>
-            <div className="">
-              <p className="text-sm mb-5 text-justify">
-                {testimonial.companyName}
-              </p>
-
-              <div className="flex justify-end">
-                {currentUser && (
-                  <button onClick={() => deleteTestimonial(testimonial.id)}>
-                    <BsTrash3Fill className="hover:text-[#fb653e]" />
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
-        </div> */
-      ))}
+        </div>
+      </div>
     </div>
   );
 };
