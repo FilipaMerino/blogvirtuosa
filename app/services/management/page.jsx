@@ -266,7 +266,7 @@ const BusinessManagement = () => {
         <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center gap-10 lg:gap-20 lg:mx-10">
           <div className="lg:w-[40%]">
             <div className="flex flex-col items-center mt-3">
-              <Link href="https://www.adminvirtuosa.com/Roadmaptosuccess/">
+              <Link href="https://www.adminvirtuosa.com/roadmaptosuccess/">
                 <Image
                   src={ebook}
                   className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md"
@@ -289,7 +289,7 @@ const BusinessManagement = () => {
             </div>
             <div className="flex justify-center lg:justify-end mx-6 items-center">
               <Link
-                href="https://www.adminvirtuosa.com/SOP/"
+                href="https://www.adminvirtuosa.com/roadmaptosuccess/"
                 className="hover:underline text-sm flex items-center font-semibold">
                 <p>Learn More</p>
 
@@ -303,7 +303,7 @@ const BusinessManagement = () => {
 
           <div className="lg:w-[40%]">
             <div className="flex flex-col items-center mt-3">
-              <Link href="https://www.adminvirtuosa.com/Roadmaptosuccess/">
+              <Link href="https://www.adminvirtuosa.com/SOP/">
                 <Image
                   src={automation}
                   className="w-80 h-80 object-cover rounded-lg mb-5 drop-shadow-md
@@ -328,7 +328,7 @@ const BusinessManagement = () => {
             </div>
             <div className="flex justify-center lg:justify-end mx-6 items-center">
               <Link
-                href="https://www.adminvirtuosa.com/Roadmaptosuccess/"
+                href="https://www.adminvirtuosa.com/SOP/"
                 className="hover:underline text-sm flex items-center font-semibold">
                 <p>Learn More</p>
 
