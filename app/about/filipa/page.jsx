@@ -56,7 +56,7 @@ const Filipa = () => {
         <div className="flex flex-col items-center mt-5 lg:items-start lg:ml-10">
           <h1 className="text-3xl lg:text-5xl mb-2">Filipa Merino</h1>
           <p className="text-sm">
-            <strong>Web Developer</strong> at Admin Virtuosa.
+            <strong>Web Developer</strong> at Admin Virtuosa..
           </p>
 
 
