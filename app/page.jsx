@@ -36,7 +36,7 @@ const HomePage = () => {
         </div>
         <div className="flex mx-5 p-5 md:mt-5 md:mx-5 lg:w-[20rem] justify-center lg:justify-start">
           <Link
-            href="/about/team"
+            href="/about"
             className="btn border-none drop-shadow-md w-32 lg:w-64 bg-[#333333] text-white ">
             About us
           </Link>
